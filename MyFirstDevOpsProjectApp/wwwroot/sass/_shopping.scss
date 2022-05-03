@@ -1,0 +1,42 @@
+﻿@import "_mixin.scss";
+
+#shopping {
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+    background: $grey;
+
+    .container-shopping {
+        @include flex;
+
+        .shopping-text {
+            font-family: $roboto;
+
+            .text1 {
+                font-size: 3.7rem;
+                color: $text-dark;
+            }
+
+            .text2 {
+                font-size: 3.7rem;
+                color: $turquoise;
+                font-weight: 600;
+            }
+
+            .text3 {
+                font-size: 1rem;
+                color: $text-dark;
+                width: 24rem;
+                line-height: 1.5rem;
+                margin-top: 1.5rem;
+            }
+
+            .text4 {
+                margin-top: 1.5rem;
+            }
+        }
+
+        .shopping-people {
+            margin: 0;
+        }
+    }
+}
