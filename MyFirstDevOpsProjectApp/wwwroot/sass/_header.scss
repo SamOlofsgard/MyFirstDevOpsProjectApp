@@ -1,22 +1,35 @@
 ﻿@import "_mixin.scss";
 
-#header {
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
+#top-header {
+    padding-top: 0rem;
+    padding-bottom: 0rem;
     background: $turquoise;
+    box-shadow: 0px 0px 5px 0px #888888;
 
-    .container-header {
+    a {
+        text-decoration: none;
+        color: $light;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+    .container-top-header {
         margin-left: auto;
         margin-right: auto;
+        font-family: $roboto;
+        font-weight: 400;
+        font-size: 1rem;
+        color: $light;
 
         .top-header {
             @include flex;
-            font-family: $roboto;
-            font-weight: 400;
-            font-size: 1rem;
-            color: $light;
 
             .block1 {
+                border-right: 2px solid white;
+                padding-top: 0.5rem;
+                padding-bottom: 0.5rem;
 
                 ul {
                     @include flex;
@@ -35,8 +48,75 @@
                     list-style: none;
 
                     li {
-                        padding: 0 0.8rem 0 0;
+                        padding: 0 0.8rem 0 0.8rem;
+                        border-right: 2px solid $light;
+                        padding-top: 0.5rem;
+                        padding-bottom: 0.5rem;
                     }
+                }
+            }
+        }
+    }
+}
+
+#middle-header {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+
+    a {
+        text-decoration: none;
+        color: $text-dark;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+    .container-middle-header {
+        @include grid;
+        grid-template-columns: repeat(25, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        font-family: $roboto;
+        font-weight: 400;
+        font-size: 1rem;
+        color: $text-dark;
+
+        .logo {
+            grid-column: 1/5;
+            grid-row: 1/2;
+        }
+
+        .search {
+            grid-column: 6/19;
+            grid-row: 1/2;
+        }
+
+        .account {
+            grid-column: 19/22;
+            grid-row: 1/2;
+
+            ul {
+                @include flex;
+                list-style: none;
+
+
+                li {
+                    padding: 0 0 0 1rem;
+                }
+            }
+        }
+
+        .likes {
+            grid-column: 23/26;
+            grid-row: 1/2;
+
+            ul {
+                @include flex;
+                list-style: none;
+
+
+                li {
+                    padding: 0 0 0 1.5rem;
                 }
             }
         }

@@ -1,12 +1,14 @@
 ﻿@media (min-width: 375px) {
-    .container-header {
+    .container-top-header,
+    .container-middle-header {
         max-width: 322px;
     }
 
 }
 
 @media (min-width: 576px) {
-    .container-header {
+    .container-top-header,
+    .container-middle-header {
         max-width: 520px;
     }
 
@@ -14,7 +16,8 @@
 
 
 @media (min-width: 768px) {
-    .container-header {
+    .container-top-header,
+    .container-middle-header {
         max-width: 718px;
     }
 
@@ -22,7 +25,8 @@
 
 
 @media (min-width: 992px) {
-    .container-header {
+    .container-top-header,
+    .container-middle-header {
         max-width: 942px;
     }
 
@@ -30,7 +34,8 @@
 
 
 @media (min-width: 1200px) {
-    .container-header {
+    .container-top-header,
+    .container-middle-header {
         max-width: 1150px;
     }
 
