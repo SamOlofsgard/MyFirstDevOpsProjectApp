@@ -1,0 +1,74 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+@import "_mixin.scss";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: $text-dark;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.form {
+    padding: 0.5rem;
+    border: 0;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, $light-grey-form 0px 0px 0px 1px;
+    border-radius: 10px;
+    width: 45%;
+    margin: 0;
+    margin-top: 0rem;
+    transition: .3s box-shadow;
+}
+
+.form:focus {
+    outline: none;
+}
+
+.button {
+    background: $turquoise;
+    border: none;
+    border-radius: 20px;
+    color: $light;
+    padding: 0.5rem 1rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    transition: 0.3s;
+    cursor: pointer;
+
+    font-family: $roboto;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.button:hover {
+    color: $text-dark;
+}
+
+.button2 {
+    background: $light;
+    border: none;
+    border-radius: 20px;
+    color: $turquoise;
+    padding: 1rem 1.5rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    transition: 0.3s;
+    cursor: pointer;
+    font-family: $roboto;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.button2:hover {
+    background: $turquoise;
+    color: $text-dark;
+}
