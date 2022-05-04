@@ -1,0 +1,163 @@
+﻿@import "_mixin.scss";
+
+#informationboxes {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+
+    .container-information-boxes {
+        @include grid;
+        grid-template-columns: repeat(19, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        font-family: $roboto;
+
+        .shipping {
+            grid-column: 1/5;
+            grid-row: 1/2;
+            background: $information-background;
+            border-radius: 10px;
+
+            @include flex;
+            color: $light;
+            transition: 0.3s ease-in-out;
+
+            .image {
+                padding-right: 2rem;
+                padding-top: 1rem;
+                padding-left: 1rem;
+                padding-bottom: 1rem;
+            }
+
+            .text {
+
+                .headline {
+                    padding-top: 1rem;
+                    padding-bottom: 0.5rem;
+                    font-size: 1rem;
+                    font-weight: 600;
+                    color: $turquoise;
+                }
+
+                .infotext {
+                    padding-bottom: 1rem;
+                    padding-right: 0.8rem;
+                    font-size: 0.7rem;
+                    color: $text-dark;
+                }
+            }
+        }
+
+        .support {
+            grid-column: 6/10;
+            grid-row: 1/2;
+            background: $information-background;
+            border-radius: 10px;
+
+            @include flex;
+            color: $light;
+            transition: 0.3s ease-in-out;
+
+            .image {
+                padding-right: 2rem;
+                padding-top: 1rem;
+                padding-left: 1rem;
+                padding-bottom: 1rem;
+            }
+
+            .text {
+
+                .headline {
+                    padding-top: 1rem;
+                    padding-bottom: 0.5rem;
+                    font-size: 1rem;
+                    font-weight: 600;
+                    color: $turquoise;
+                }
+
+                .infotext {
+                    padding-bottom: 1rem;
+                    padding-right: 0.8rem;
+                    font-size: 0.7rem;
+                    color: $text-dark;
+                }
+            }
+        }
+
+        .payment {
+            grid-column: 11/15;
+            grid-row: 1/2;
+            background: $information-background;
+            border-radius: 10px;
+
+            @include flex;
+            color: $light;
+            transition: 0.3s ease-in-out;
+
+            .image {
+                padding-right: 2rem;
+                padding-top: 1rem;
+                padding-left: 1rem;
+                padding-bottom: 1rem;
+            }
+
+            .text {
+
+                .headline {
+                    padding-top: 1rem;
+                    padding-bottom: 0.5rem;
+                    font-size: 1rem;
+                    font-weight: 600;
+                    color: $turquoise;
+                }
+
+                .infotext {
+                    padding-bottom: 1rem;
+                    padding-right: 0.8rem;
+                    font-size: 0.7rem;
+                    color: $text-dark;
+                }
+            }
+        }
+
+        .delivery {
+            grid-column: 16/20;
+            grid-row: 1/2;
+            background: $information-background;
+            border-radius: 10px;
+
+            @include flex;
+            color: $light;
+            transition: 0.3s ease-in-out;
+
+            .image {
+                padding-right: 2rem;
+                padding-top: 1rem;
+                padding-left: 1rem;
+                padding-bottom: 1rem;
+            }
+
+            .text {
+
+                .headline {
+                    padding-top: 1rem;
+                    padding-bottom: 0.5rem;
+                    font-size: 1rem;
+                    font-weight: 600;
+                    color: $turquoise;
+                }
+
+                .infotext {
+                    padding-bottom: 1rem;
+                    padding-right: 0.8rem;
+                    font-size: 0.7rem;
+                    color: $text-dark;
+                }
+            }
+        }
+
+        .shipping:hover, .support:hover, .payment:hover, .delivery:hover {
+            background: #C7F4EE;
+            background-repeat: no-repeat;
+            box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+        }
+    }
+}

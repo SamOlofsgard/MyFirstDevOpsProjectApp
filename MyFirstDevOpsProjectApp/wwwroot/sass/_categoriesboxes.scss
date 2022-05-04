@@ -1,0 +1,190 @@
+﻿@import "_mixin.scss";
+
+#categoriesboxes {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+
+
+    .container-categoriesboxes {
+        @include container;
+        text-align: center;
+        font-family: $roboto;
+
+        .headline {
+            @include flex2;
+            font-size: 2.2rem;
+            font-weight: 600;
+
+            .headline1 {
+                color: $text-dark;
+                margin-right: 0.5rem;
+            }
+
+            .headline2 {
+                color: $turquoise;
+            }
+        }
+
+        .image {
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .text {
+            font-size: 0.9rem;
+            margin-bottom: 3rem;
+        }
+
+        .boxes {
+            display: grid;
+            grid-template-columns: repeat(10, 100px);
+            grid-template-rows: repeat(12, 50px);
+            column-gap: 0.7rem;
+            row-gap: 0.7rem;
+            font-family: $roboto;
+            font-size: 1rem;
+            color: $turquoise;
+            font-weight: 600;
+
+
+
+            .men {
+                grid-area: 1 / 1 / 5 / 3;
+                background: $dark-grey;
+                border-radius: 10px;
+                transition: 0.3s ease-in-out;
+                padding-top: 12.4rem;
+
+                .text {
+                    background: $dark-purple;
+                    padding: 0.5rem;
+                    padding-left: 1rem;
+                    border-bottom-left-radius: 10px;
+                    border-top-right-radius: 10px;
+                    text-align: start;
+                    width: 50%;
+                }
+            }
+
+            .women {
+                grid-area: 1 / 3 / 5 / 7;
+                background: $dark-grey;
+                border-radius: 10px;
+                transition: 0.3s ease-in-out;
+                padding-top: 12.4rem;
+
+                .text {
+                    background: $dark-purple;
+                    padding: 0.5rem;
+                    padding-left: 1rem;
+                    border-bottom-left-radius: 10px;
+                    border-top-right-radius: 10px;
+                    text-align: start;
+                    width: 50%;
+                }
+            }
+
+            .kids {
+                grid-area: 1 / 7 / 9 / 11;
+                background: $dark-grey;
+                border-radius: 10px;
+                transition: 0.3s ease-in-out;
+                padding-top: 27.8rem;
+
+                .text {
+                    background: $dark-purple;
+                    padding: 0.5rem;
+                    padding-left: 1rem;
+                    border-bottom-left-radius: 10px;
+                    border-top-right-radius: 10px;
+                    text-align: start;
+                    width: 50%;
+                }
+            }
+
+            .shoes {
+                grid-area: 5 / 1 / 13 / 5;
+                background: $dark-grey;
+                border-radius: 10px;
+                transition: 0.3s ease-in-out;
+                padding-top: 27.8rem;
+
+                .text {
+                    background: $dark-purple;
+                    padding: 0.5rem;
+                    padding-left: 1rem;
+                    border-bottom-left-radius: 10px;
+                    border-top-right-radius: 10px;
+                    text-align: start;
+                    width: 50%;
+                }
+            }
+
+            .hats {
+                grid-area: 5 / 5 / 9 / 7;
+                background: $dark-grey;
+                border-radius: 10px;
+                transition: 0.3s ease-in-out;
+                padding-top: 12.4rem;
+
+                .text {
+                    background: $dark-purple;
+                    padding: 0.5rem;
+                    padding-left: 1rem;
+                    border-bottom-left-radius: 10px;
+                    border-top-right-radius: 10px;
+                    text-align: start;
+                    width: 50%;
+                }
+            }
+
+            .sunglasses {
+                grid-area: 9 / 5 / 13 / 9;
+                background: $dark-grey;
+                border-radius: 10px;
+                transition: 0.3s ease-in-out;
+                padding-top: 10.9rem;
+
+                .text {
+                    background: $dark-purple;
+                    padding: 0.5rem;
+                    padding-left: 1rem;
+                    border-bottom-left-radius: 10px;
+                    border-top-right-radius: 10px;
+                    text-align: start;
+                    width: 50%;
+
+                    .products-text {
+                        color: $text-light;
+                        font-weight: 400;
+                        padding-top: 0.5rem;
+                    }
+                }
+            }
+
+            .watches {
+                grid-area: 9 / 9 / 13 / 11;
+                background: $dark-grey;
+                border-radius: 10px;
+                transition: 0.3s ease-in-out;
+                padding-top: 12.5rem;
+
+                .text {
+                    background: $dark-purple;
+                    padding: 0.5rem;
+                    padding-left: 1rem;
+                    border-bottom-left-radius: 10px;
+                    border-top-right-radius: 10px;
+                    text-align: start;
+                    width: 50%;
+                }
+            }
+        }
+
+        .men:hover, .women:hover, .kids:hover, .shoes:hover, .hats:hover, .sunglasses:hover, .watches:hover {
+            background: $dark-purple;
+            background-repeat: no-repeat;
+            box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+        }
+    }
+}
