@@ -155,7 +155,8 @@ a:hover {
   list-style: none;
 }
 #top-header .container-top-header .top-header .block1 ul li {
-  padding: 0 1rem 0 0rem;
+  background: url(/img/drop.svg) no-repeat right center;
+  padding: 0 1.5rem 0 0;
 }
 #top-header .container-top-header .top-header .block2 {
   grid-column: 14/19;
@@ -267,7 +268,7 @@ a:hover {
   padding-top: 0.7rem;
   padding-bottom: 0.7rem;
   font-family: "Roboto", sans-serif;
-  font-size: 1rem;
+  font-size: 0.9rem;
   color: #FFFFFF;
 }
 #lower-header .container-lower-header .browse ul {
@@ -279,7 +280,7 @@ a:hover {
   list-style: none;
 }
 #lower-header .container-lower-header .browse ul li {
-  padding: 0 0.5rem 0 0.5rem;
+  padding: 0 0.8rem 0 0.8rem;
 }
 #lower-header .container-lower-header .links {
   grid-column: 6/17;
@@ -342,6 +343,6 @@ a:hover {
 }
 #shopping .container-shopping .shopping-people {
   position: absolute;
-  left: 900px;
+  left: 950px;
   top: 193px;
 }
