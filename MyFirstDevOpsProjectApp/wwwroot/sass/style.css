@@ -76,7 +76,8 @@ a:hover {
 .container-lower-header,
 .container-shopping,
 .container-information-boxes,
-.container-categoriesboxes {
+.container-categoriesboxes,
+.container-newarrivals {
     max-width: 322px;
   }
 }
@@ -86,7 +87,8 @@ a:hover {
 .container-lower-header,
 .container-shopping,
 .container-information-boxes,
-.container-categoriesboxes {
+.container-categoriesboxes,
+.container-newarrivals {
     max-width: 520px;
   }
 }
@@ -96,7 +98,8 @@ a:hover {
 .container-lower-header,
 .container-shopping,
 .container-information-boxes,
-.container-categoriesboxes {
+.container-categoriesboxes,
+.container-newarrivals {
     max-width: 718px;
   }
 }
@@ -106,7 +109,8 @@ a:hover {
 .container-lower-header,
 .container-shopping,
 .container-information-boxes,
-.container-categoriesboxes {
+.container-categoriesboxes,
+.container-newarrivals {
     max-width: 942px;
   }
 }
@@ -121,6 +125,10 @@ a:hover {
 
   .container-information-boxes {
     max-width: 1350px;
+  }
+
+  .container-newarrivals {
+    max-width: 1250px;
   }
 }
 #top-header {
@@ -519,7 +527,7 @@ a:hover {
 
 #categoriesboxes {
   padding-top: 3rem;
-  padding-bottom: 3rem;
+  padding-bottom: 4rem;
 }
 #categoriesboxes .container-categoriesboxes {
   margin-left: auto;
@@ -683,4 +691,39 @@ a:hover {
   background: #0E153D;
   background-repeat: no-repeat;
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+#newarrivals {
+  padding-top: 3rem;
+  padding-bottom: 4rem;
+}
+#newarrivals .container-newarrivals {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+}
+#newarrivals .container-newarrivals .headline {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 2.2rem;
+  font-weight: 600;
+}
+#newarrivals .container-newarrivals .headline .headline1 {
+  color: #0E153D;
+  margin-right: 0.5rem;
+}
+#newarrivals .container-newarrivals .headline .headline2 {
+  color: #20D3C2;
+}
+#newarrivals .container-newarrivals .image {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+#newarrivals .container-newarrivals .text {
+  font-size: 0.9rem;
+  margin-bottom: 3rem;
 }

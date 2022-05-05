@@ -4,7 +4,8 @@
     .container-lower-header,
     .container-shopping,
     .container-information-boxes,
-    .container-categoriesboxes {
+    .container-categoriesboxes,
+    .container-newarrivals {
         max-width: 322px;
     }
 
@@ -16,7 +17,8 @@
     .container-lower-header,
     .container-shopping,
     .container-information-boxes,
-    .container-categoriesboxes {
+    .container-categoriesboxes,
+    .container-newarrivals {
         max-width: 520px;
     }
 
@@ -29,7 +31,8 @@
     .container-lower-header,
     .container-shopping,
     .container-information-boxes,
-    .container-categoriesboxes {
+    .container-categoriesboxes,
+    .container-newarrivals {
         max-width: 718px;
     }
 
@@ -42,7 +45,8 @@
     .container-lower-header,
     .container-shopping,
     .container-information-boxes,
-    .container-categoriesboxes {
+    .container-categoriesboxes,
+    .container-newarrivals {
         max-width: 942px;
     }
 
@@ -60,6 +64,10 @@
 
     .container-information-boxes {
         max-width: 1350px; 
+    }
+
+    .container-newarrivals  {
+        max-width: 1250px;
     }
 
 }

@@ -8,6 +8,10 @@
     margin-right: auto;
 }
 
+@mixin grid2 {
+    display: grid;
+}
+
 @mixin flex {
     display: flex;
     justify-content: space-between;
