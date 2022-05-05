@@ -16,8 +16,7 @@
     }
 
     .container-top-header {
-        margin-left: auto;
-        margin-right: auto;
+        @include container;
         font-family: $roboto;
         font-weight: 400;
         font-size: 1rem;
@@ -68,6 +67,10 @@
             .socialmedia {
                 grid-column: 19/21;
                 grid-row: 1/2;
+
+                i:hover {
+                    color: $i-hover;
+                }
 
                 ul {
                     @include flex;
@@ -157,6 +160,15 @@
             font-family: $roboto;
             font-size: 0.9rem;
             color: $light;
+
+            a {
+                text-decoration: none;
+                color: $light;
+            }
+
+            a:hover {
+                text-decoration: underline;
+            }
 
             ul {
                 @include flex;

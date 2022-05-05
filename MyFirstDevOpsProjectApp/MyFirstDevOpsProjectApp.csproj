@@ -7,6 +7,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Views\Shared\Footer\**" />
+    <Content Remove="Views\Shared\Footer\**" />
+    <EmbeddedResource Remove="Views\Shared\Footer\**" />
+    <None Remove="Views\Shared\Footer\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Content Remove="compilerconfig.json" />
   </ItemGroup>
 
