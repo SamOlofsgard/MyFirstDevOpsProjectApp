@@ -74,7 +74,10 @@ a:hover {
   .container-top-header,
 .container-middle-header,
 .container-lower-header,
-.container-shopping {
+.container-shopping,
+.container-information-boxes,
+.container-categoriesboxes,
+.container-newarrivals {
     max-width: 322px;
   }
 }
@@ -82,7 +85,10 @@ a:hover {
   .container-top-header,
 .container-middle-header,
 .container-lower-header,
-.container-shopping {
+.container-shopping,
+.container-information-boxes,
+.container-categoriesboxes,
+.container-newarrivals {
     max-width: 520px;
   }
 }
@@ -90,7 +96,10 @@ a:hover {
   .container-top-header,
 .container-middle-header,
 .container-lower-header,
-.container-shopping {
+.container-shopping,
+.container-information-boxes,
+.container-categoriesboxes,
+.container-newarrivals {
     max-width: 718px;
   }
 }
@@ -98,7 +107,10 @@ a:hover {
   .container-top-header,
 .container-middle-header,
 .container-lower-header,
-.container-shopping {
+.container-shopping,
+.container-information-boxes,
+.container-categoriesboxes,
+.container-newarrivals {
     max-width: 942px;
   }
 }
@@ -106,8 +118,17 @@ a:hover {
   .container-top-header,
 .container-middle-header,
 .container-lower-header,
-.container-shopping {
+.container-shopping,
+.container-categoriesboxes {
     max-width: 1150px;
+  }
+
+  .container-information-boxes {
+    max-width: 1350px;
+  }
+
+  .container-newarrivals {
+    max-width: 1250px;
   }
 }
 #top-header {
@@ -155,7 +176,8 @@ a:hover {
   list-style: none;
 }
 #top-header .container-top-header .top-header .block1 ul li {
-  padding: 0 1rem 0 0rem;
+  background: url(/img/drop.svg) no-repeat right center;
+  padding: 0 1.5rem 0 0;
 }
 #top-header .container-top-header .top-header .block2 {
   grid-column: 14/19;
@@ -178,6 +200,9 @@ a:hover {
 #top-header .container-top-header .top-header .socialmedia {
   grid-column: 19/21;
   grid-row: 1/2;
+}
+#top-header .container-top-header .top-header .socialmedia i:hover {
+  color: #23797e;
 }
 #top-header .container-top-header .top-header .socialmedia ul {
   display: flex;
@@ -267,8 +292,15 @@ a:hover {
   padding-top: 0.7rem;
   padding-bottom: 0.7rem;
   font-family: "Roboto", sans-serif;
-  font-size: 1rem;
+  font-size: 0.9rem;
   color: #FFFFFF;
+}
+#lower-header .container-lower-header .browse a {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+#lower-header .container-lower-header .browse a:hover {
+  text-decoration: underline;
 }
 #lower-header .container-lower-header .browse ul {
   display: flex;
@@ -279,7 +311,7 @@ a:hover {
   list-style: none;
 }
 #lower-header .container-lower-header .browse ul li {
-  padding: 0 0.5rem 0 0.5rem;
+  padding: 0 0.8rem 0 0.8rem;
 }
 #lower-header .container-lower-header .links {
   grid-column: 6/17;
@@ -342,6 +374,356 @@ a:hover {
 }
 #shopping .container-shopping .shopping-people {
   position: absolute;
-  left: 900px;
+  left: 950px;
   top: 193px;
+}
+
+#informationboxes {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+#informationboxes .container-information-boxes {
+  display: grid;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  grid-template-columns: repeat(19, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  font-family: "Roboto", sans-serif;
+}
+#informationboxes .container-information-boxes .shipping {
+  grid-column: 1/5;
+  grid-row: 1/2;
+  background: #EDFCFA;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  color: #FFFFFF;
+  transition: 0.3s ease-in-out;
+}
+#informationboxes .container-information-boxes .shipping .image {
+  padding-right: 2rem;
+  padding-top: 1rem;
+  padding-left: 1rem;
+  padding-bottom: 1rem;
+}
+#informationboxes .container-information-boxes .shipping .text .headline {
+  padding-top: 1rem;
+  padding-bottom: 0.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #20D3C2;
+}
+#informationboxes .container-information-boxes .shipping .text .infotext {
+  padding-bottom: 1rem;
+  padding-right: 0.8rem;
+  font-size: 0.7rem;
+  color: #0E153D;
+}
+#informationboxes .container-information-boxes .support {
+  grid-column: 6/10;
+  grid-row: 1/2;
+  background: #EDFCFA;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  color: #FFFFFF;
+  transition: 0.3s ease-in-out;
+}
+#informationboxes .container-information-boxes .support .image {
+  padding-right: 2rem;
+  padding-top: 1rem;
+  padding-left: 1rem;
+  padding-bottom: 1rem;
+}
+#informationboxes .container-information-boxes .support .text .headline {
+  padding-top: 1rem;
+  padding-bottom: 0.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #20D3C2;
+}
+#informationboxes .container-information-boxes .support .text .infotext {
+  padding-bottom: 1rem;
+  padding-right: 0.8rem;
+  font-size: 0.7rem;
+  color: #0E153D;
+}
+#informationboxes .container-information-boxes .payment {
+  grid-column: 11/15;
+  grid-row: 1/2;
+  background: #EDFCFA;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  color: #FFFFFF;
+  transition: 0.3s ease-in-out;
+}
+#informationboxes .container-information-boxes .payment .image {
+  padding-right: 2rem;
+  padding-top: 1rem;
+  padding-left: 1rem;
+  padding-bottom: 1rem;
+}
+#informationboxes .container-information-boxes .payment .text .headline {
+  padding-top: 1rem;
+  padding-bottom: 0.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #20D3C2;
+}
+#informationboxes .container-information-boxes .payment .text .infotext {
+  padding-bottom: 1rem;
+  padding-right: 0.8rem;
+  font-size: 0.7rem;
+  color: #0E153D;
+}
+#informationboxes .container-information-boxes .delivery {
+  grid-column: 16/20;
+  grid-row: 1/2;
+  background: #EDFCFA;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  color: #FFFFFF;
+  transition: 0.3s ease-in-out;
+}
+#informationboxes .container-information-boxes .delivery .image {
+  padding-right: 2rem;
+  padding-top: 1rem;
+  padding-left: 1rem;
+  padding-bottom: 1rem;
+}
+#informationboxes .container-information-boxes .delivery .text .headline {
+  padding-top: 1rem;
+  padding-bottom: 0.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #20D3C2;
+}
+#informationboxes .container-information-boxes .delivery .text .infotext {
+  padding-bottom: 1rem;
+  padding-right: 0.8rem;
+  font-size: 0.7rem;
+  color: #0E153D;
+}
+#informationboxes .container-information-boxes .shipping:hover, #informationboxes .container-information-boxes .support:hover, #informationboxes .container-information-boxes .payment:hover, #informationboxes .container-information-boxes .delivery:hover {
+  background: #C7F4EE;
+  background-repeat: no-repeat;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+#categoriesboxes {
+  padding-top: 3rem;
+  padding-bottom: 4rem;
+}
+#categoriesboxes .container-categoriesboxes {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+}
+#categoriesboxes .container-categoriesboxes .headline {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 2.2rem;
+  font-weight: 600;
+}
+#categoriesboxes .container-categoriesboxes .headline .headline1 {
+  color: #0E153D;
+  margin-right: 0.5rem;
+}
+#categoriesboxes .container-categoriesboxes .headline .headline2 {
+  color: #20D3C2;
+}
+#categoriesboxes .container-categoriesboxes .image {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+#categoriesboxes .container-categoriesboxes .text {
+  font-size: 0.9rem;
+  margin-bottom: 3rem;
+}
+#categoriesboxes .container-categoriesboxes .boxes {
+  display: grid;
+  grid-template-columns: repeat(10, 100px);
+  grid-template-rows: repeat(12, 50px);
+  column-gap: 0.7rem;
+  row-gap: 0.7rem;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  color: #20D3C2;
+  font-weight: 600;
+}
+#categoriesboxes .container-categoriesboxes .boxes .men {
+  grid-area: 1/1/5/3;
+  background: #CCCCCC;
+  border-radius: 10px;
+  transition: 0.3s ease-in-out;
+  padding-top: 12.45rem;
+}
+#categoriesboxes .container-categoriesboxes .boxes .men .text {
+  background: #0E153D;
+  padding: 0.5rem;
+  padding-left: 1rem;
+  border-bottom-left-radius: 10px;
+  border-top-right-radius: 10px;
+  text-align: start;
+  width: 50%;
+}
+#categoriesboxes .container-categoriesboxes .boxes .women {
+  grid-area: 1/3/5/7;
+  background: #CCCCCC;
+  border-radius: 10px;
+  transition: 0.3s ease-in-out;
+  padding-top: 12.45rem;
+}
+#categoriesboxes .container-categoriesboxes .boxes .women .text {
+  background: #0E153D;
+  padding: 0.5rem;
+  padding-left: 1rem;
+  border-bottom-left-radius: 10px;
+  border-top-right-radius: 10px;
+  text-align: start;
+  width: 50%;
+}
+#categoriesboxes .container-categoriesboxes .boxes .kids {
+  grid-area: 1/7/9/11;
+  background: #CCCCCC;
+  border-radius: 10px;
+  transition: 0.3s ease-in-out;
+  padding-top: 27.75rem;
+}
+#categoriesboxes .container-categoriesboxes .boxes .kids .text {
+  background: #0E153D;
+  padding: 0.5rem;
+  padding-left: 1rem;
+  border-bottom-left-radius: 10px;
+  border-top-right-radius: 10px;
+  text-align: start;
+  width: 50%;
+}
+#categoriesboxes .container-categoriesboxes .boxes .shoes {
+  grid-area: 5/1/13/5;
+  background: #CCCCCC;
+  border-radius: 10px;
+  transition: 0.3s ease-in-out;
+  padding-top: 27.8rem;
+}
+#categoriesboxes .container-categoriesboxes .boxes .shoes .text {
+  background: #0E153D;
+  padding: 0.5rem;
+  padding-left: 1rem;
+  border-bottom-left-radius: 10px;
+  border-top-right-radius: 10px;
+  text-align: start;
+  width: 50%;
+}
+#categoriesboxes .container-categoriesboxes .boxes .hats {
+  grid-area: 5/5/9/7;
+  background: #CCCCCC;
+  border-radius: 10px;
+  transition: 0.3s ease-in-out;
+  padding-top: 12.45rem;
+}
+#categoriesboxes .container-categoriesboxes .boxes .hats .text {
+  background: #0E153D;
+  padding: 0.5rem;
+  padding-left: 1rem;
+  border-bottom-left-radius: 10px;
+  border-top-right-radius: 10px;
+  text-align: start;
+  width: 50%;
+}
+#categoriesboxes .container-categoriesboxes .boxes .sunglasses {
+  grid-area: 9/5/13/9;
+  background: #CCCCCC;
+  border-radius: 10px;
+  transition: 0.3s ease-in-out;
+  padding-top: 10.85rem;
+}
+#categoriesboxes .container-categoriesboxes .boxes .sunglasses .text {
+  background: #0E153D;
+  padding: 0.5rem;
+  padding-left: 1rem;
+  border-bottom-left-radius: 10px;
+  border-top-right-radius: 10px;
+  text-align: start;
+  width: 50%;
+}
+#categoriesboxes .container-categoriesboxes .boxes .sunglasses .text .products-text {
+  color: #FFFFFF;
+  font-weight: 400;
+  padding-top: 0.5rem;
+}
+#categoriesboxes .container-categoriesboxes .boxes .watches {
+  grid-area: 9/9/13/11;
+  background: #CCCCCC;
+  border-radius: 10px;
+  transition: 0.3s ease-in-out;
+  padding-top: 12.5rem;
+}
+#categoriesboxes .container-categoriesboxes .boxes .watches .text {
+  background: #0E153D;
+  padding: 0.5rem;
+  padding-left: 1rem;
+  border-bottom-left-radius: 10px;
+  border-top-right-radius: 10px;
+  text-align: start;
+  width: 50%;
+}
+#categoriesboxes .container-categoriesboxes .men:hover, #categoriesboxes .container-categoriesboxes .women:hover, #categoriesboxes .container-categoriesboxes .kids:hover, #categoriesboxes .container-categoriesboxes .shoes:hover, #categoriesboxes .container-categoriesboxes .hats:hover, #categoriesboxes .container-categoriesboxes .sunglasses:hover, #categoriesboxes .container-categoriesboxes .watches:hover {
+  background: #0E153D;
+  background-repeat: no-repeat;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+#newarrivals {
+  padding-top: 3rem;
+  padding-bottom: 4rem;
+}
+#newarrivals .container-newarrivals {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+}
+#newarrivals .container-newarrivals .headline {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 2.2rem;
+  font-weight: 600;
+}
+#newarrivals .container-newarrivals .headline .headline1 {
+  color: #0E153D;
+  margin-right: 0.5rem;
+}
+#newarrivals .container-newarrivals .headline .headline2 {
+  color: #20D3C2;
+}
+#newarrivals .container-newarrivals .image {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+#newarrivals .container-newarrivals .text {
+  font-size: 0.9rem;
+  margin-bottom: 3rem;
 }

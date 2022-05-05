@@ -16,8 +16,7 @@
     }
 
     .container-top-header {
-        margin-left: auto;
-        margin-right: auto;
+        @include container;
         font-family: $roboto;
         font-weight: 400;
         font-size: 1rem;
@@ -33,7 +32,6 @@
                 border-right: 2px solid white;
                 padding-top: 0.6rem;
                 padding-bottom: 0.6rem;
-
                 grid-column: 1/4;
                 grid-row: 1/2;
 
@@ -43,7 +41,8 @@
                     list-style: none;
 
                     li {
-                        padding: 0 1rem 0 0rem;
+                        background: url(/img/drop.svg) no-repeat right center;
+                        padding: 0 1.5rem 0 0;
                     }
                 }
             }
@@ -68,6 +67,10 @@
             .socialmedia {
                 grid-column: 19/21;
                 grid-row: 1/2;
+
+                i:hover {
+                    color: $i-hover;
+                }
 
                 ul {
                     @include flex;
@@ -155,8 +158,17 @@
             padding-top: 0.7rem;
             padding-bottom: 0.7rem;
             font-family: $roboto;
-            font-size: 1rem;
+            font-size: 0.9rem;
             color: $light;
+
+            a {
+                text-decoration: none;
+                color: $light;
+            }
+
+            a:hover {
+                text-decoration: underline;
+            }
 
             ul {
                 @include flex;
@@ -164,7 +176,7 @@
 
 
                 li {
-                    padding: 0 0.5rem 0 0.5rem;
+                    padding: 0 0.8rem 0 0.8rem;
                 }
             }
         }

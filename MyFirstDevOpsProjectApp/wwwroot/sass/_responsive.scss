@@ -2,7 +2,10 @@
     .container-top-header,
     .container-middle-header,
     .container-lower-header,
-    .container-shopping {
+    .container-shopping,
+    .container-information-boxes,
+    .container-categoriesboxes,
+    .container-newarrivals {
         max-width: 322px;
     }
 
@@ -12,7 +15,10 @@
     .container-top-header,
     .container-middle-header,
     .container-lower-header,
-    .container-shopping {
+    .container-shopping,
+    .container-information-boxes,
+    .container-categoriesboxes,
+    .container-newarrivals {
         max-width: 520px;
     }
 
@@ -23,7 +29,10 @@
     .container-top-header,
     .container-middle-header,
     .container-lower-header,
-    .container-shopping {
+    .container-shopping,
+    .container-information-boxes,
+    .container-categoriesboxes,
+    .container-newarrivals {
         max-width: 718px;
     }
 
@@ -34,7 +43,10 @@
     .container-top-header,
     .container-middle-header,
     .container-lower-header,
-    .container-shopping {
+    .container-shopping,
+    .container-information-boxes,
+    .container-categoriesboxes,
+    .container-newarrivals {
         max-width: 942px;
     }
 
@@ -45,8 +57,17 @@
     .container-top-header,
     .container-middle-header,
     .container-lower-header,
-    .container-shopping {
+    .container-shopping,
+    .container-categoriesboxes {
         max-width: 1150px;
+    }
+
+    .container-information-boxes {
+        max-width: 1350px; 
+    }
+
+    .container-newarrivals  {
+        max-width: 1250px;
     }
 
 }
