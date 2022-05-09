@@ -5,7 +5,9 @@
     .container-shopping,
     .container-information-boxes,
     .container-categoriesboxes,
-    .container-newarrivals {
+    .container-newarrivals,
+    .container-sales-01,
+    .container-featured-products {
         max-width: 322px;
     }
 
@@ -18,7 +20,9 @@
     .container-shopping,
     .container-information-boxes,
     .container-categoriesboxes,
-    .container-newarrivals {
+    .container-newarrivals,
+    .container-sales-01,
+    .container-featured-products {
         max-width: 520px;
     }
 
@@ -32,7 +36,9 @@
     .container-shopping,
     .container-information-boxes,
     .container-categoriesboxes,
-    .container-newarrivals {
+    .container-newarrivals,
+    .container-sales-01,
+    .container-featured-products {
         max-width: 718px;
     }
 
@@ -46,7 +52,9 @@
     .container-shopping,
     .container-information-boxes,
     .container-categoriesboxes,
-    .container-newarrivals {
+    .container-newarrivals,
+    .container-sales-01,
+    .container-featured-products {
         max-width: 942px;
     }
 
@@ -58,7 +66,8 @@
     .container-middle-header,
     .container-lower-header,
     .container-shopping,
-    .container-categoriesboxes {
+    .container-categoriesboxes,
+    .container-sales-01 {
         max-width: 1150px;
     }
 
@@ -66,8 +75,9 @@
         max-width: 1350px; 
     }
 
-    .container-newarrivals  {
-        max-width: 1250px;
+    .container-newarrivals,
+    .container-featured-products {
+        max-width: 1300px;
     }
 
 }

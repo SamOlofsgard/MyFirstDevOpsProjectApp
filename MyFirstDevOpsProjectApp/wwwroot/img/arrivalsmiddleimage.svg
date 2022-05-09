@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="350" height="400" viewBox="0 0 350 400">
+  <g id="Group_1163" data-name="Group 1163" transform="translate(-785 -2251)">
+    <g id="Group_1159" data-name="Group 1159">
+      <g id="Group_1160" data-name="Group 1160">
+        <rect id="Rectangle_307" data-name="Rectangle 307" width="350" height="400" rx="6" transform="translate(785 2251)" fill="#0e153d" opacity="0.85"/>
+      </g>
+    </g>
+    <text id="New_look_men_s_coat" data-name="New look men&apos;s coat" transform="translate(810 2520)" fill="#fff" font-size="18" font-family="Roboto-Regular, Roboto"><tspan x="0" y="0">New look men&apos;s coat</tspan></text>
+    <text id="_190.00" data-name="$190.00" transform="translate(810 2623)" fill="#20d3c2" font-size="24" font-family="Roboto-Medium, Roboto" font-weight="500"><tspan x="0" y="0">$190.00</tspan></text>
+    <text id="_220.00" data-name="$220.00" transform="translate(810 2586)" fill="#fff" font-size="16" font-family="Roboto-Regular, Roboto" text-decoration="line-through"><tspan x="0" y="0">$220.00</tspan></text>
+    <rect id="Rectangle_309" data-name="Rectangle 309" width="46" height="203" rx="23" transform="translate(1074 2266)" fill="#fff"/>
+    <g id="Search_icon" data-name="Search icon" transform="translate(1071.848 2087.543)">
+      <g id="Ellipse_10" data-name="Ellipse 10" transform="translate(15.152 304.457)" fill="none" stroke="#aaa" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5">
+        <circle cx="8.493" cy="8.493" r="8.493" stroke="none"/>
+        <circle cx="8.493" cy="8.493" r="7.743" fill="none"/>
+      </g>
+      <line id="Line_12" data-name="Line 12" x1="5.502" y1="5.502" transform="translate(29.65 318.955)" fill="none" stroke="#aaa" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+    </g>
+    <path id="Heart_icon" data-name="Heart icon" d="M295.565,309.457a5,5,0,0,1,10,0v2.753c0,4.509-10,12.247-10,12.247s-10-7.738-10-12.247v-2.753a5,5,0,0,1,10,0" transform="translate(801.435 2019.543)" fill="none" stroke="#aaa" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+    <g id="Compare_icon" data-name="Compare icon" transform="translate(840.065 2052.988)">
+      <g id="Group_23" data-name="Group 23" transform="translate(246.935 306.012)">
+        <path id="Path_48" data-name="Path 48" d="M266.935,309.9h-4.022a2.452,2.452,0,0,0-2.027,1.071l-6.363,9.335a2.451,2.451,0,0,1-2.027,1.071h-5.561" transform="translate(-246.935 -307.31)" fill="none" stroke="#aaa" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+        <path id="Path_49" data-name="Path 49" d="M273.043,306.012l2.594,2.594-2.594,2.594" transform="translate(-255.638 -306.012)" fill="none" stroke="#aaa" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      </g>
+      <g id="Group_24" data-name="Group 24" transform="translate(246.935 309.867)">
+        <path id="Path_50" data-name="Path 50" d="M266.935,323.274h-4.022a2.454,2.454,0,0,1-2.027-1.071l-6.363-9.336A2.453,2.453,0,0,0,252.5,311.8h-5.561" transform="translate(-246.935 -311.795)" fill="none" stroke="#aaa" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+        <path id="Path_51" data-name="Path 51" d="M273.043,325.121l2.594,2.594-2.594,2.594" transform="translate(-255.638 -316.237)" fill="none" stroke="#aaa" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      </g>
+    </g>
+    <g id="Cart_icon" data-name="Cart icon" transform="translate(994.587 2013.267)">
+      <path id="Path_52" data-name="Path 52" d="M92.413,413.733h2.61l5.083,11.643h9.941l2.366-7.651H100.106" fill="none" stroke="#20d3c2" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      <g id="Group_26" data-name="Group 26" transform="translate(97.856 427.641)">
+        <circle id="Ellipse_11" data-name="Ellipse 11" cx="1.726" cy="1.726" r="1.726" transform="translate(10.969)" fill="none" stroke="#20d3c2" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+        <circle id="Ellipse_12" data-name="Ellipse 12" cx="1.726" cy="1.726" r="1.726" fill="none" stroke="#20d3c2" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      </g>
+    </g>
+    <circle id="Color" cx="10" cy="10" r="10" transform="translate(1087 2289)" fill="#fe6c6c"/>
+    <g id="Tooltip_-_Right" data-name="Tooltip - Right" transform="translate(979 2421)">
+      <g id="Group_28" data-name="Group 28" transform="translate(-971 -2547)">
+        <rect id="Rectangle_312" data-name="Rectangle 312" width="89.977" height="29" rx="4" transform="translate(971 2547)" fill="#20d3c2"/>
+        <rect id="Rectangle_313" data-name="Rectangle 313" width="7.786" height="7.786" transform="translate(1060.494 2555.954) rotate(45)" fill="#20d3c2"/>
+      </g>
+      <text id="Add_to_cart" data-name="Add to cart" transform="translate(45 20)" fill="#fff" font-size="14" font-family="Roboto-Regular, Roboto"><tspan x="-34.436" y="0">Add to cart</tspan></text>
+    </g>
+    <g id="Tags_Button_-_White" data-name="Tags Button - White" transform="translate(810 2535)">
+      <g id="Rectangle_308" data-name="Rectangle 308" fill="none" stroke="#fff" stroke-width="1">
+        <rect width="70" height="23" stroke="none"/>
+        <rect x="0.5" y="0.5" width="69" height="22" fill="none"/>
+      </g>
+      <text id="Fashion" transform="translate(35 17)" fill="#fff" font-size="14" font-family="Roboto-Regular, Roboto"><tspan x="-24.579" y="0">Fashion</tspan></text>
+    </g>
+  </g>
+</svg>
