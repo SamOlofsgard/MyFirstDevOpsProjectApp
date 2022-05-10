@@ -1,10 +1,10 @@
 ﻿@import "_mixin.scss";
 
-#newarrivals {
-    padding-top: 3rem;
+#topsellers {
+    padding-top: 7rem;
     padding-bottom: 7rem;
 
-    .container-newarrivals {
+    .container-topsellers {
         @include container;
         text-align: center;
         font-family: $roboto;
@@ -34,73 +34,54 @@
             margin-bottom: 3rem;
         }
 
-        .carousel {
+        .showcase {
             @include grid;
-            grid-template-columns: repeat(20, 1fr);
-            grid-template-rows: repeat(1, 1fr);
-            column-gap: 2.5rem;
+            grid-template-columns: repeat(6, 1fr);
+            grid-template-rows: repeat(9, 1fr);
+            column-gap: 0rem;
+            row-gap: 1.2rem;
 
 
-            .leftarrow {
-                grid-column: 1/2;
-                grid-row: 1/2;
-                color: $dark-grey;
 
-                .image:hover {
-                    color: $turquoise;
-                }
-            }
-
-            .leftimage {
-                grid-column: 2/8;
-                grid-row: 1/2;
+            .image1 {
+                grid-area: 1 / 1 / 9 / 4;
                 background-color: $grey;
-                background-image: url(/img/arrivalsleftimage.svg);
+                background-image: url(/img/topsellersimage1.svg);
                 background-repeat: no-repeat;
-                padding-top: 25rem;
+                padding-top: 43.7rem;
+                width: 95.4%;
                 border-radius: 10px;
                 transition: 0.3s ease-in-out;
                 box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
             }
 
-            .middleimage {
-                grid-column: 8/14;
-                grid-row: 1/2;
-                background-image: url(/img/arrivalsmiddleimage.svg);
-                background-color: $dark-purple;
+            .image2 {
+                grid-area: 1 / 4 / 5 / 7;
+                background-color: $grey;
+                background-image: url(/img/topsellersimage2.svg);
                 background-repeat: no-repeat;
-                padding-top: 25rem;
+                padding-top: 21.2rem;
+                width: 95.4%;
                 border-radius: 10px;
                 transition: 0.3s ease-in-out;
                 box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
             }
 
-            .rightimage {
-                grid-column: 14/20;
-                grid-row: 1/2;
-                background: $grey;
-                background-image: url(/img/arrivalsrightimage.svg);
+            .image3 {
+                grid-area: 4 / 4 / 10 / 7;
+                background-color: $grey;
+                background-image: url(/img/topsellersimage3.svg);
                 background-repeat: no-repeat;
-                padding-bottom: 25rem;
+                padding-top: 21.2rem;
+                width: 95.4%;
                 border-radius: 10px;
                 transition: 0.3s ease-in-out;
                 box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
-            }
-
-            .rightarrow {
-                grid-column: 20/21;
-                grid-row: 1/2;
-                color: $dark-grey;
-
-                .image:hover {
-                    color: $turquoise;
-                }
             }
         }
 
-        .leftimage:hover, .middleimage:hover, .rightimage:hover {
+        .image1:hover, .image2:hover, .image3:hover {
             box-shadow: $cardhover 0px 2px 8px, $cardhover 0px 8px 24px, $cardhover 0px 16px 56px;
-            background-color: $dark-turqouise;   
         }
     }
 }

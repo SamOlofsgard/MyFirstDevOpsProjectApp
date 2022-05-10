@@ -1,0 +1,94 @@
+﻿@import "_mixin.scss";
+
+#latestblog {
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+
+    .container-latestblog {
+        @include container;
+        font-family: $roboto;
+        text-align: center;
+
+        .headline {
+            @include flex2;
+            font-size: 2.2rem;
+            font-weight: 600;
+
+            .headline1 {
+                color: $text-dark;
+                margin-right: 0.5rem;
+            }
+
+            .headline2 {
+                color: $turquoise;
+            }
+        }
+
+        .image {
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .text {
+            font-size: 0.9rem;
+            margin-bottom: 3rem;
+        }
+
+        .carousel {
+            @include grid;
+            grid-template-columns: repeat(6, 1fr);
+            grid-template-rows: repeat(9, 1fr);
+            column-gap: 2rem;
+            row-gap: 10px;
+
+            .leftarrow {
+                grid-area: 1 / 1 / 10 / 2;
+                color: $dark-grey;
+
+                .image:hover {
+                    color: $turquoise;
+                }
+            }
+        }
+
+        .content1 {
+            grid-area: 1 / 2 / 10 / 4;
+            background-color: $grey;
+            background-image: url(/img/latestblogcontent1.svg);
+            background-repeat: no-repeat;
+            padding-top: 25rem;
+            width: 500px;
+            border-radius: 10px;
+            transition: 0.3s ease-in-out;
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+        }
+
+        .content2 {
+            grid-area: 1 / 4 / 10 / 6;
+            background-color: $grey;
+            background-image: url(/img/latestblogcontent2.svg);
+            background-repeat: no-repeat;
+            padding-top: 25rem;
+            width: 500px;
+            border-radius: 10px;
+            transition: 0.3s ease-in-out;
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+        }
+
+        .rightarrow {
+            grid-area: 1 / 6 / 10 / 7;
+            color: $dark-grey;
+
+            .image:hover {
+                color: $turquoise;
+            }
+        }
+
+
+        .content1:hover, .content2:hover {
+            box-shadow: $cardhover 0px 2px 8px, $cardhover 0px 8px 24px, $cardhover 0px 16px 56px;
+            background-color: $dark-turqouise;
+        }
+    }
+}
+

@@ -66,7 +66,6 @@
                 grid-column: 8/14;
                 grid-row: 1/2;
                 background-image: url(/img/productsmiddleimage.svg);
-                background-color: $dark-purple;
                 background-repeat: no-repeat;
                 padding-top: 25rem;
                 border-radius: 10px;
@@ -99,6 +98,7 @@
 
         .leftimage:hover, .middleimage:hover, .rightimage:hover {
             box-shadow: $cardhover 0px 2px 8px, $cardhover 0px 8px 24px, $cardhover 0px 16px 56px;
+            background-color: $dark-turqouise;
         }
     }
 }
