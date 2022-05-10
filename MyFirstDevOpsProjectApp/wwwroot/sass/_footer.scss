@@ -1,1 +1,112 @@
-﻿
+﻿@import "_mixin.scss";
+
+#footer {
+    position: relative;
+
+    .back-to-top {
+        position: absolute;
+        right:4rem;
+        top:5rem;
+    }
+
+    .footer-grid {
+        font-family: $roboto;
+        line-height: 2rem;
+        background-color: $dark-purple;
+        border-top: 20px solid $turquoise;
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+
+        @include grid;
+        grid-template-columns: repeat(4, 285px);
+        column-gap: 2rem;
+        align-items: start;
+        justify-content: center;
+
+        a {
+            text-decoration: none;
+            color: $light;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            color: $text-turquoise;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        .Header1 {
+            color: $text-turquoise;
+            font-weight: 600;
+            font-size: 18px;
+            padding-bottom: 30px;
+        }
+
+        .Header2 {
+            color: $text-turquoise;
+            line-height: 3rem;
+        }
+
+        .container-footer {
+            color: $light;
+        }
+
+        .kenkata-info {
+            grid-column: 1;
+
+            .line {
+                padding-left: 2rem;
+                padding-bottom: 5px;
+            }
+
+            .social-media {
+                a {
+                    padding-right: 2rem;
+                }
+            }
+        }
+
+        .contact-info {
+            grid-column: 2;
+        }
+
+        .useful-links {
+            grid-column: 3;
+
+            a {
+                line-height: 3rem;
+            }
+        }
+
+        .recent-instagram {
+            grid-column: 4;
+
+            .instagram-placeholders {
+                padding-top: 1rem;
+
+                img {
+                    margin-right: 0.5rem;
+                }
+            }
+        }
+    }
+
+    .footer-bottom {
+        background-color: black;
+
+        .bottom {
+            color: $light;
+            padding-top: 1.5rem;
+            padding-bottom: 1.5rem;
+            width: 1250px;
+            @include flex;
+
+            img {
+                padding-right: 1rem;
+            }
+        }
+    }
+}
+
