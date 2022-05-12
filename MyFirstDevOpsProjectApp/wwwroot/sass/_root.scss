@@ -42,7 +42,6 @@ a:hover {
     display: inline-block;
     transition: 0.3s;
     cursor: pointer;
-
     font-family: $roboto;
     font-weight: 500;
     font-size: 1rem;
@@ -57,7 +56,7 @@ a:hover {
     border: none;
     border-radius: 20px;
     color: $turquoise;
-    padding: 1rem 1.5rem;
+    padding: 0.8rem 1.5rem;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -70,5 +69,26 @@ a:hover {
 
 .button2:hover {
     background: $turquoise;
+    color: $text-dark;
+}
+
+.button3 {
+    background: $dark-purple;
+    border: none;
+    border-radius: 20px;
+    color: $light;
+    padding: 0.8rem 1.5rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    transition: 0.3s;
+    cursor: pointer;
+    font-family: $roboto;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.button3:hover {
+    background: $dark-grey;
     color: $text-dark;
 }

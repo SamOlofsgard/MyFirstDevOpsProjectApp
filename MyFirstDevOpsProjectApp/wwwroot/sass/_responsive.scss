@@ -2,20 +2,36 @@
     .container-top-header,
     .container-middle-header,
     .container-lower-header,
-    .container-shopping {
+    .container-shopping,
+    .container-information-boxes,
+    .container-categoriesboxes,
+    .container-newarrivals,
+    .container-sales-01,
+    .container-featured-products,
+    .container-sales-02,
+    .container-topsellers,
+    .container-latestblog,
+    .container-subscribe {
         max-width: 322px;
     }
-
 }
 
 @media (min-width: 576px) {
     .container-top-header,
     .container-middle-header,
     .container-lower-header,
-    .container-shopping {
+    .container-shopping,
+    .container-information-boxes,
+    .container-categoriesboxes,
+    .container-newarrivals,
+    .container-sales-01,
+    .container-featured-products,
+    .container-sales-02,
+    .container-topsellers,
+    .container-latestblog,
+    .container-subscribe {
         max-width: 520px;
     }
-
 }
 
 
@@ -23,10 +39,19 @@
     .container-top-header,
     .container-middle-header,
     .container-lower-header,
-    .container-shopping {
+    .container-shopping,
+    .container-information-boxes,
+    .container-categoriesboxes,
+    .container-newarrivals,
+    .container-sales-01,
+    .container-featured-products,
+    .container-sales-02,
+    .container-topsellers,
+    .container-reviews,
+    .container-latestblog,
+    .container-subscribe {
         max-width: 718px;
     }
-
 }
 
 
@@ -34,10 +59,19 @@
     .container-top-header,
     .container-middle-header,
     .container-lower-header,
-    .container-shopping {
+    .container-shopping,
+    .container-information-boxes,
+    .container-categoriesboxes,
+    .container-newarrivals,
+    .container-sales-01,
+    .container-featured-products,
+    .container-sales-02,
+    .container-topsellers,
+    .container-reviews,
+    .container-latestblog,
+    .container-subscribe {
         max-width: 942px;
     }
-
 }
 
 
@@ -45,8 +79,23 @@
     .container-top-header,
     .container-middle-header,
     .container-lower-header,
-    .container-shopping {
+    .container-shopping,
+    .container-categoriesboxes,
+    .container-sales-01,
+    .container-sales-02,
+    .container-topsellers,
+    .container-reviews,
+    .container-subscribe {
         max-width: 1150px;
     }
 
+    .container-information-boxes {
+        max-width: 1350px;
+    }
+
+    .container-newarrivals,
+    .container-featured-products,
+    .container-latestblog {
+        max-width: 1300px;
+    }
 }

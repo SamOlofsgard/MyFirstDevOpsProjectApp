@@ -1,10 +1,10 @@
 ﻿@import "_mixin.scss";
 
-#topsellers {
+#featuredproducts {
     padding-top: 7rem;
     padding-bottom: 7rem;
 
-    .container-topsellers {
+    .container-featured-products {
         @include container;
         text-align: center;
         font-family: $roboto;
@@ -34,54 +34,71 @@
             margin-bottom: 3rem;
         }
 
-        .showcase {
+        .carousel {
             @include grid;
-            grid-template-columns: repeat(6, 1fr);
-            grid-template-rows: repeat(9, 1fr);
-            column-gap: 0rem;
-            row-gap: 1.2rem;
+            grid-template-columns: repeat(20, 1fr);
+            grid-template-rows: repeat(1, 1fr);
+            column-gap: 2.5rem;
 
+            .leftarrow {
+                grid-column: 1/2;
+                grid-row: 1/2;
+                color: $dark-grey;
 
+                .image:hover {
+                    color: $turquoise;
+                }
+            }
 
-            .image1 {
-                grid-area: 1 / 1 / 9 / 4;
+            .leftimage {
+                grid-column: 2/8;
+                grid-row: 1/2;
                 background-color: $grey;
-                background-image: url(/img/topsellersimage1.svg);
+                background-image: url(/img/productsleftimage.svg);
                 background-repeat: no-repeat;
-                padding-top: 43.7rem;
-                width: 95.4%;
+                padding-top: 25rem;
                 border-radius: 10px;
                 transition: 0.3s ease-in-out;
                 box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
             }
 
-            .image2 {
-                grid-area: 1 / 4 / 5 / 7;
-                background-color: $grey;
-                background-image: url(/img/topsellersimage2.svg);
+            .middleimage {
+                grid-column: 8/14;
+                grid-row: 1/2;
+                background-image: url(/img/productsmiddleimage.svg);
                 background-repeat: no-repeat;
-                padding-top: 21.2rem;
-                width: 95.4%;
+                padding-top: 25rem;
                 border-radius: 10px;
                 transition: 0.3s ease-in-out;
                 box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
             }
 
-            .image3 {
-                grid-area: 4 / 4 / 10 / 7;
-                background-color: $grey;
-                background-image: url(/img/topsellersimage3.svg);
+            .rightimage {
+                grid-column: 14/20;
+                grid-row: 1/2;
+                background: $grey;
+                background-image: url(/img/productsrightimage.svg);
                 background-repeat: no-repeat;
-                padding-top: 21.2rem;
-                width: 95.4%;
+                padding-bottom: 25rem;
                 border-radius: 10px;
                 transition: 0.3s ease-in-out;
                 box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+            }
+
+            .rightarrow {
+                grid-column: 20/21;
+                grid-row: 1/2;
+                color: $dark-grey;
+
+                .image:hover {
+                    color: $turquoise;
+                }
             }
         }
 
-        .image1:hover, .image2:hover, .image3:hover {
+        .leftimage:hover, .middleimage:hover, .rightimage:hover {
             box-shadow: $cardhover 0px 2px 8px, $cardhover 0px 8px 24px, $cardhover 0px 16px 56px;
+            background-color: $dark-turqouise;
         }
     }
 }

@@ -1,1 +1,46 @@
-﻿
+﻿@import "_mixin.scss";
+
+#subscribe {
+    margin-top: 7rem;
+    margin-bottom: 7rem;
+    background-color: $grey;
+
+    .container-subscribe {
+        @include flex;
+        font-family: $roboto;
+
+        .content {
+
+            .headline {
+                @include flex4;
+                font-size: 2.2rem;
+                font-weight: 600;
+                text-align: left;
+
+                .headline1 {
+                    color: $text-dark;
+                    margin-right: 0.5rem;
+                }
+
+                .headline2 {
+                    color: $turquoise;
+                }
+            }
+
+            .text {
+                margin-top: 0.8rem;
+            }
+
+            .subscribeform {
+                margin-top: 0.8rem;
+                width: 700px;
+            }
+        }
+
+        .grey {
+            width: 500px;
+            height: 300px;
+            background-color: $dark-grey;
+        }
+    }
+}

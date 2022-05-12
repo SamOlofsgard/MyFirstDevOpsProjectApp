@@ -1,1 +1,49 @@
-﻿
+﻿@import "_mixin.scss";
+
+#sales01 {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    background: $dark-grey;
+
+    .container-sales-01 {
+        @include flex3;
+        font-family: $roboto;
+        color: $light;
+
+        .shop {
+            background-color: $turquoise;
+            width: 250px;
+            height: 418px;
+            padding-top: 8rem;
+            text-align: center;
+
+            .headline {
+                font-size: 3rem;
+                font-weight: 600;
+                margin-bottom: 1rem;
+            }
+
+            .text {
+                font-size: 1rem;
+                font-weight: 400;
+                margin-bottom: 2rem;
+            }
+
+            .text2 {
+                margin: 0;
+            }
+        }
+
+        .learn {
+
+            .text {
+                font-size: 0.8rem;
+                line-height: 1.5rem;
+            }
+
+            .text2 {
+                margin-top: 2rem;
+            }
+        }
+    }
+}
