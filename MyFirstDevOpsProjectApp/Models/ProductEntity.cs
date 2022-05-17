@@ -38,7 +38,7 @@ namespace MyFirstDevOpsProjectApp.Models
         [Column(TypeName = "nvarchar(50)")]
         public string Rating { get; set; }
 
-        //public CategoryEntity CategoryName { get; set; }
+        public CategoryEntity CategoryName { get; set; }
 
         public bool IsOnSale { get; set; }
     }
