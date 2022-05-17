@@ -7,6 +7,7 @@ namespace MyFirstDevOpsProjectApp.Models
     {
         [Key]
         public int Id { get; set; } = 0;
+        public ProductEntity ProductId { get; set; }
 
         [Required]
         [Column(TypeName = "Int")]
