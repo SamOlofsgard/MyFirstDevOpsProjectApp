@@ -131,6 +131,100 @@ a:hover {
     max-width: 1250px;
   }
 }
+#footer {
+  position: relative;
+}
+#footer .back-to-top {
+  position: absolute;
+  right: 4rem;
+  top: 5rem;
+}
+#footer .footer-grid {
+  font-family: "Roboto", sans-serif;
+  line-height: 2rem;
+  background-color: #0E153D;
+  border-top: 20px solid #20D3C2;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  display: grid;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  grid-template-columns: repeat(4, 285px);
+  column-gap: 2rem;
+  align-items: start;
+  justify-content: center;
+}
+#footer .footer-grid a {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+#footer .footer-grid a:hover {
+  text-decoration: underline;
+  color: #20D3C2;
+}
+#footer .footer-grid ul {
+  list-style: none;
+}
+#footer .footer-grid .Header1 {
+  color: #20D3C2;
+  font-weight: 600;
+  font-size: 18px;
+  padding-bottom: 30px;
+}
+#footer .footer-grid .Header2 {
+  color: #20D3C2;
+  line-height: 3rem;
+}
+#footer .footer-grid .container-footer {
+  color: #FFFFFF;
+}
+#footer .footer-grid .kenkata-info {
+  grid-column: 1;
+}
+#footer .footer-grid .kenkata-info .line {
+  padding-left: 2rem;
+  padding-bottom: 5px;
+}
+#footer .footer-grid .kenkata-info .social-media a {
+  padding-right: 2rem;
+}
+#footer .footer-grid .contact-info {
+  grid-column: 2;
+}
+#footer .footer-grid .useful-links {
+  grid-column: 3;
+}
+#footer .footer-grid .useful-links a {
+  line-height: 3rem;
+}
+#footer .footer-grid .recent-instagram {
+  grid-column: 4;
+}
+#footer .footer-grid .recent-instagram .instagram-placeholders {
+  padding-top: 1rem;
+}
+#footer .footer-grid .recent-instagram .instagram-placeholders img {
+  margin-right: 0.5rem;
+}
+#footer .footer-bottom {
+  background-color: black;
+}
+#footer .footer-bottom .bottom {
+  color: #FFFFFF;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  width: 1250px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+#footer .footer-bottom .bottom img {
+  padding-right: 1rem;
+}
+
 #top-header {
   padding-top: 0rem;
   padding-bottom: 0rem;
