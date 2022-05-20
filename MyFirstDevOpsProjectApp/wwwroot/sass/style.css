@@ -1,4 +1,6 @@
 ﻿@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,300&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -345,4 +347,107 @@ a:hover {
   position: absolute;
   left: 950px;
   top: 193px;
+}
+
+#login {
+  width: 540px;
+  height: 522px;
+  margin-top: 6rem;
+  background-color: #F6F6F6;
+}
+
+.container {
+  justify-items: center;
+  align-items: baseline;
+}
+
+.test {
+  margin-left: 0.8rem;
+}
+
+.col-6 {
+  width: 540px !important;
+  height: 522px !important;
+  margin-bottom: -11rem;
+}
+
+.p-3 {
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  font-weight: 100;
+}
+
+.grid {
+  display: grid;
+}
+
+.form-label {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+}
+
+.inline {
+  margin-top: 3rem;
+  width: 70%;
+  height: 2px;
+  background: #ccc;
+  margin-left: 2rem;
+}
+
+.cole {
+  align-items: center;
+  margin-top: 2.4rem;
+  font-size: medium;
+  font-weight: 200;
+  font-family: "Roboto", sans-serif;
+}
+
+.Bilder {
+  margin-top: 3rem;
+}
+
+.lost {
+  color: #20D3C2;
+  text-align: end;
+  width: 10rem;
+  margin-left: 4rem;
+  font-family: "Roboto", sans-serif;
+}
+
+.bildF {
+  margin-left: 0.3rem;
+}
+
+.bildg {
+  margin-left: 1rem;
+}
+
+.form-check-label {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+}
+
+.btne {
+  width: 500px;
+  height: 55px;
+  border-radius: 3rem;
+  text-align: center;
+  background-color: #20D3C2;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  color: white;
+}
+
+#Regidter {
+  margin-left: 102%;
+  margin-top: -21.5rem;
+  background-color: #F6F6F6;
+  width: 540px;
+  height: 668px;
+}
+
+.textregister {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 100;
 }
