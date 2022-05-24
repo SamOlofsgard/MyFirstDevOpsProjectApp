@@ -4,13 +4,13 @@ namespace MyFirstDevOpsProjectApp.Repositories
 {
     public interface IProductRepository
     {
-        Task<List<Product>> GetProductsAsync();
+        Task<List<ProductEntity>> GetProductsAsync();
     }
 
     public class ProductRepository : IProductRepository
     {
 
-        Task<List<Product>> IProductRepository.GetProductsAsync()
+        Task<List<ProductEntity>> IProductRepository.GetProductsAsync()
         {
             throw new NotImplementedException();
         }

@@ -30,7 +30,7 @@ namespace ProjectApp.Test.ProducServices
 
             //Assert
             var viewResult = Assert.IsType<ViewResult>(result);
-            var model = Assert.IsAssignableFrom<List<Product>>(viewResult.ViewData.Model);
+            var model = Assert.IsAssignableFrom<List<ProductEntity>>(viewResult.ViewData.Model);
             Assert.Equal(3, model.Count());
         }
     }
