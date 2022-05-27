@@ -104,7 +104,8 @@ a:hover {
 .container-sales-02,
 .container-topsellers,
 .container-latestblog,
-.container-subscribe {
+.container-subscribe,
+.container-companies {
     max-width: 322px;
   }
 }
@@ -121,7 +122,8 @@ a:hover {
 .container-sales-02,
 .container-topsellers,
 .container-latestblog,
-.container-subscribe {
+.container-subscribe,
+.container-companies {
     max-width: 520px;
   }
 }
@@ -139,7 +141,8 @@ a:hover {
 .container-topsellers,
 .container-reviews,
 .container-latestblog,
-.container-subscribe {
+.container-subscribe,
+.container-companies {
     max-width: 718px;
   }
 }
@@ -157,7 +160,8 @@ a:hover {
 .container-topsellers,
 .container-reviews,
 .container-latestblog,
-.container-subscribe {
+.container-subscribe,
+.container-companies {
     max-width: 942px;
   }
 }
@@ -171,7 +175,8 @@ a:hover {
 .container-sales-02,
 .container-topsellers,
 .container-reviews,
-.container-subscribe {
+.container-subscribe,
+.container-companies {
     max-width: 1150px;
   }
 
@@ -1383,4 +1388,34 @@ a:hover {
   width: 500px;
   height: 300px;
   background-color: #CCCCCC;
+}
+
+#companies {
+  padding-top: 0rem;
+  padding-bottom: 7rem;
+}
+#companies .container-companies {
+  display: grid;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  column-gap: 70px;
+  text-align: center;
+}
+#companies .container-companies .bexim {
+  grid-column: 1/2;
+}
+#companies .container-companies .lighton {
+  grid-column: 2/3;
+}
+#companies .container-companies .dismis {
+  grid-column: 3/4;
+}
+#companies .container-companies .rosimo {
+  grid-column: 4/5;
+}
+#companies .container-companies .dallas {
+  grid-column: 5/6;
 }
