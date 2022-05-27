@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using MyFirstDevOpsProjectApp.Models.Entities;
 
 namespace MyFirstDevOpsProjectApp.Models
 {
@@ -13,6 +14,10 @@ namespace MyFirstDevOpsProjectApp.Models
         {
         }
 
-        public virtual DbSet<ProductEntity> Products { get; set; } = null!;
+        public virtual DbSet<ProductEntity> Products { get; set; }
+        public virtual DbSet<CategoryEntity> Categories { get; set; }
+
     }
+
+
 }

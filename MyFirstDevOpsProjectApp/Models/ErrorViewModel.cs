@@ -1,4 +1,4 @@
-namespace MyFirstDevOpsProjectApp.Models
+﻿namespace MyFirstDevOpsProjectApp.Models
 {
     public class ErrorViewModel
     {
