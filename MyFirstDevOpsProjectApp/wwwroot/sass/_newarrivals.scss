@@ -84,7 +84,7 @@
             .middleimage {
                 grid-column: 8/14;
                 grid-row: 1/2;
-                background-image: url(/img/arrivalsmiddleimage.svg);
+                background-image: url(/img/productsmiddleimage.svg);
                 background-color: $dark-purple;
                 background-repeat: no-repeat;
                 border-radius: 10px;
@@ -97,62 +97,39 @@
                     border-radius: 100px;
                     width: 45px;
                     height: 180px;
-                    margin-left: 18rem;
+                    margin-left: 17.8rem;
                     margin-top: 1rem;
+                    padding-top: 0.3rem;
+
+                    .image:hover {
+                        color: $turquoise;
+                        cursor: pointer;
+                    }
 
                     .circle {
                         color: #FE6C6C;
                         margin: 0;
                         padding: 0;
-
-                        .image:hover {
-                            color: $turquoise;
-                            cursor: pointer;
-                        }
                     }
 
                     .heart {
                         color: $dark-grey;
-                        margin-top: -1rem;
                         padding: 0;
-
-                        .image:hover {
-                            color: $turquoise;
-                            cursor: pointer;
-                        }
                     }
 
                     .shuffle {
                         color: $dark-grey;
-                        margin-top: -1rem;
                         padding: 0;
-
-                        .image:hover {
-                            color: $turquoise;
-                            cursor: pointer;
-                        }
                     }
 
                     .search {
                         color: $dark-grey;
-                        margin-top: -1rem;
                         padding: 0;
-
-                        .image:hover {
-                            color: $turquoise;
-                            cursor: pointer;
-                        }
                     }
 
                     .cart {
                         color: $dark-grey;
-                        margin-top: -1rem;
                         padding: 0;
-
-                        .image:hover {
-                            color: $turquoise;
-                            cursor: pointer;
-                        }
                     }
                 }
 
@@ -240,7 +217,6 @@
 
             .image1:hover, .middleimage:hover, .image3:hover {
                 box-shadow: $cardhover 0px 2px 8px, $cardhover 0px 8px 24px, $cardhover 0px 16px 56px;
-                background-color: $light-grey;
             }
         }
     }

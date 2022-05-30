@@ -40,6 +40,7 @@
             grid-template-rows: repeat(1, 1fr);
             column-gap: 2.5rem;
 
+
             .leftarrow {
                 grid-column: 1/2;
                 grid-row: 1/2;
@@ -47,42 +48,160 @@
 
                 .image:hover {
                     color: $turquoise;
+                    cursor: pointer;
                 }
             }
 
             .leftimage {
                 grid-column: 2/8;
                 grid-row: 1/2;
-                background-color: $grey;
-                background-image: url(/img/productsleftimage.svg);
-                background-repeat: no-repeat;
-                padding-top: 25rem;
-                border-radius: 10px;
-                transition: 0.3s ease-in-out;
-                box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+                background-color: $light;
+
+                .image1 {
+                    padding-top: 21.81rem;
+                    border-top-left-radius: 10px;
+                    border-top-right-radius: 10px;
+                    background-color: $grey;
+                    background-image: url(/img/productsleftimage.svg);
+                    background-repeat: no-repeat;
+                    transition: 0.3s ease-in-out;
+                    cursor: pointer;
+                }
+
+                .image1text {
+                    background: $dark-purple;
+                    border-bottom-left-radius: 10px;
+                    border-bottom-right-radius: 10px;
+                    font-family: $roboto;
+                    font-size: 1rem;
+                    color: $light-grey;
+                    text-align: left;
+                    padding: 1rem;
+                    width: 100%;
+                }
             }
 
             .middleimage {
                 grid-column: 8/14;
                 grid-row: 1/2;
                 background-image: url(/img/productsmiddleimage.svg);
+                background-color: $dark-purple;
                 background-repeat: no-repeat;
-                padding-top: 25rem;
                 border-radius: 10px;
                 transition: 0.3s ease-in-out;
                 box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+
+
+                .menu {
+                    background-color: $light;
+                    border-radius: 100px;
+                    width: 45px;
+                    height: 180px;
+                    margin-left: 17.8rem;
+                    margin-top: 1rem;
+                    padding-top: 0.3rem;
+
+                    .image:hover {
+                        color: $turquoise;
+                        cursor: pointer;
+                    }
+
+                    .circle {
+                        color: #FE6C6C;
+                        margin: 0;
+                        padding: 0;
+                    }
+
+                    .heart {
+                        color: $dark-grey;
+                        padding: 0;
+                    }
+
+                    .shuffle {
+                        color: $dark-grey;
+                        padding: 0;
+                    }
+
+                    .search {
+                        color: $dark-grey;
+                        padding: 0;
+                    }
+
+                    .cart {
+                        color: $dark-grey;
+                        padding: 0;
+                    }
+                }
+
+                .headline {
+                    font-family: $roboto;
+                    font-size: 1.1rem;
+                    color: $light;
+                    font-weight: 400;
+                    margin-right: 9rem;
+                    margin-top: 3.5rem;
+                }
+
+                .fashion {
+                    font-family: $roboto;
+                    font-size: 0.9rem;
+                    color: $light;
+                    font-weight: 400;
+                    margin-right: 15.5rem;
+                    margin-left: 1.5rem;
+                    margin-top: 0.8rem;
+                    border: 1px solid white;
+                }
+
+                .price1 {
+                    font-family: $roboto;
+                    font-size: 0.85rem;
+                    color: $light;
+                    font-weight: 400;
+                    text-decoration: line-through;
+                    margin-right: 15.5rem;
+                    margin-top: 0.8rem;
+                }
+
+                .price2 {
+                    font-family: $roboto;
+                    font-size: 1.3rem;
+                    color: turquoise;
+                    font-weight: 600;
+                    margin-right: 14rem;
+                    margin-top: 1.2rem;
+                    margin-bottom: 1.2rem;
+                }
             }
+
 
             .rightimage {
                 grid-column: 14/20;
                 grid-row: 1/2;
-                background: $grey;
-                background-image: url(/img/productsrightimage.svg);
-                background-repeat: no-repeat;
-                padding-bottom: 25rem;
-                border-radius: 10px;
-                transition: 0.3s ease-in-out;
-                box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+                background-color: $light;
+
+                .image3 {
+                    padding-top: 21.81rem;
+                    border-top-left-radius: 10px;
+                    border-top-right-radius: 10px;
+                    background-color: $grey;
+                    background-image: url(/img/productsrightimage.svg);
+                    background-repeat: no-repeat;
+                    transition: 0.3s ease-in-out;
+                    cursor: pointer;
+                }
+
+                .image3text {
+                    background: $dark-purple;
+                    border-bottom-left-radius: 10px;
+                    border-bottom-right-radius: 10px;
+                    font-family: $roboto;
+                    font-size: 1rem;
+                    color: $light-grey;
+                    text-align: left;
+                    padding: 1rem;
+                    width: 100%;
+                }
             }
 
             .rightarrow {
@@ -92,13 +211,13 @@
 
                 .image:hover {
                     color: $turquoise;
+                    cursor: pointer;
                 }
             }
-        }
 
-        .leftimage:hover, .middleimage:hover, .rightimage:hover {
-            box-shadow: $cardhover 0px 2px 8px, $cardhover 0px 8px 24px, $cardhover 0px 16px 56px;
-            background-color: $dark-turqouise;
+            .image1:hover, .middleimage:hover, .image3:hover {
+                box-shadow: $cardhover 0px 2px 8px, $cardhover 0px 8px 24px, $cardhover 0px 16px 56px;
+            }
         }
     }
 }
