@@ -22,16 +22,5 @@ namespace MyFirstDevOpsProjectApp.Controllers
             return View(model);
         }
 
-        public IActionResult Categories(int id)
-        {
-            var categoryEntity = _context.Categories.FirstOrDefault(x => x.Id == id);
-            if (categoryEntity == null)
-            {
-                return NotFound();
-            }
-
-            var products = _context.Products.Where(x => x.Categories.Id == id);
-            return View(products);
-        }
     }
 }

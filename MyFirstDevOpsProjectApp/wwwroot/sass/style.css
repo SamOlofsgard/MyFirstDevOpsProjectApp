@@ -582,6 +582,7 @@ a:hover {
   background: #C7F4EE;
   background-repeat: no-repeat;
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  cursor: pointer;
 }
 
 #categoriesboxes {
@@ -750,6 +751,7 @@ a:hover {
   background: #0E153D;
   background-repeat: no-repeat;
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  cursor: pointer;
 }
 
 #newarrivals {
@@ -802,17 +804,33 @@ a:hover {
 }
 #newarrivals .container-newarrivals .carousel .leftarrow .image:hover {
   color: #20D3C2;
+  cursor: pointer;
 }
 #newarrivals .container-newarrivals .carousel .leftimage {
   grid-column: 2/8;
   grid-row: 1/2;
+  background-color: #FFFFFF;
+}
+#newarrivals .container-newarrivals .carousel .leftimage .image1 {
+  padding-top: 21.81rem;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
   background-color: #EEEEEE;
   background-image: url(/img/arrivalsleftimage.svg);
   background-repeat: no-repeat;
-  padding-top: 25rem;
-  border-radius: 10px;
   transition: 0.3s ease-in-out;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+  cursor: pointer;
+}
+#newarrivals .container-newarrivals .carousel .leftimage .image1text {
+  background: #0E153D;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  color: #F6F6F6;
+  text-align: left;
+  padding: 1rem;
+  width: 100%;
 }
 #newarrivals .container-newarrivals .carousel .middleimage {
   grid-column: 8/14;
@@ -820,21 +838,124 @@ a:hover {
   background-image: url(/img/arrivalsmiddleimage.svg);
   background-color: #0E153D;
   background-repeat: no-repeat;
-  padding-top: 25rem;
   border-radius: 10px;
   transition: 0.3s ease-in-out;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
 }
+#newarrivals .container-newarrivals .carousel .middleimage .menu {
+  background-color: #FFFFFF;
+  border-radius: 100px;
+  width: 45px;
+  height: 180px;
+  margin-left: 18rem;
+  margin-top: 1rem;
+}
+#newarrivals .container-newarrivals .carousel .middleimage .menu .circle {
+  color: #FE6C6C;
+  margin: 0;
+  padding: 0;
+}
+#newarrivals .container-newarrivals .carousel .middleimage .menu .circle .image:hover {
+  color: #20D3C2;
+  cursor: pointer;
+}
+#newarrivals .container-newarrivals .carousel .middleimage .menu .heart {
+  color: #CCCCCC;
+  margin-top: -1rem;
+  padding: 0;
+}
+#newarrivals .container-newarrivals .carousel .middleimage .menu .heart .image:hover {
+  color: #20D3C2;
+  cursor: pointer;
+}
+#newarrivals .container-newarrivals .carousel .middleimage .menu .shuffle {
+  color: #CCCCCC;
+  margin-top: -1rem;
+  padding: 0;
+}
+#newarrivals .container-newarrivals .carousel .middleimage .menu .shuffle .image:hover {
+  color: #20D3C2;
+  cursor: pointer;
+}
+#newarrivals .container-newarrivals .carousel .middleimage .menu .search {
+  color: #CCCCCC;
+  margin-top: -1rem;
+  padding: 0;
+}
+#newarrivals .container-newarrivals .carousel .middleimage .menu .search .image:hover {
+  color: #20D3C2;
+  cursor: pointer;
+}
+#newarrivals .container-newarrivals .carousel .middleimage .menu .cart {
+  color: #CCCCCC;
+  margin-top: -1rem;
+  padding: 0;
+}
+#newarrivals .container-newarrivals .carousel .middleimage .menu .cart .image:hover {
+  color: #20D3C2;
+  cursor: pointer;
+}
+#newarrivals .container-newarrivals .carousel .middleimage .headline {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.1rem;
+  color: #FFFFFF;
+  font-weight: 400;
+  margin-right: 9rem;
+  margin-top: 3.5rem;
+}
+#newarrivals .container-newarrivals .carousel .middleimage .fashion {
+  font-family: "Roboto", sans-serif;
+  font-size: 0.9rem;
+  color: #FFFFFF;
+  font-weight: 400;
+  margin-right: 15.5rem;
+  margin-left: 1.5rem;
+  margin-top: 0.8rem;
+  border: 1px solid white;
+}
+#newarrivals .container-newarrivals .carousel .middleimage .price1 {
+  font-family: "Roboto", sans-serif;
+  font-size: 0.85rem;
+  color: #FFFFFF;
+  font-weight: 400;
+  text-decoration: line-through;
+  margin-right: 15.5rem;
+  margin-top: 0.8rem;
+}
+#newarrivals .container-newarrivals .carousel .middleimage .price2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.3rem;
+  color: turquoise;
+  font-weight: 600;
+  margin-right: 14rem;
+  margin-top: 1.2rem;
+  margin-bottom: 1.2rem;
+}
 #newarrivals .container-newarrivals .carousel .rightimage {
   grid-column: 14/20;
   grid-row: 1/2;
-  background: #EEEEEE;
+  background-color: #FFFFFF;
+}
+#newarrivals .container-newarrivals .carousel .rightimage .image3 {
+  padding-top: 21.81rem;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background-color: #EEEEEE;
   background-image: url(/img/arrivalsrightimage.svg);
   background-repeat: no-repeat;
-  padding-bottom: 25rem;
-  border-radius: 10px;
   transition: 0.3s ease-in-out;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+  cursor: pointer;
+}
+#newarrivals .container-newarrivals .carousel .rightimage .image3text {
+  background: #0E153D;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  color: #F6F6F6;
+  text-align: left;
+  padding: 1rem;
+  width: 100%;
 }
 #newarrivals .container-newarrivals .carousel .rightarrow {
   grid-column: 20/21;
@@ -843,10 +964,11 @@ a:hover {
 }
 #newarrivals .container-newarrivals .carousel .rightarrow .image:hover {
   color: #20D3C2;
+  cursor: pointer;
 }
-#newarrivals .container-newarrivals .leftimage:hover, #newarrivals .container-newarrivals .middleimage:hover, #newarrivals .container-newarrivals .rightimage:hover {
+#newarrivals .container-newarrivals .carousel .image1:hover, #newarrivals .container-newarrivals .carousel .middleimage:hover, #newarrivals .container-newarrivals .carousel .image3:hover {
   box-shadow: #11111a1a 0px 2px 8px, #11111a1a 0px 8px 24px, #11111a1a 0px 16px 56px;
-  background-color: #24998E;
+  background-color: #F6F6F6;
 }
 
 #sales01 {
