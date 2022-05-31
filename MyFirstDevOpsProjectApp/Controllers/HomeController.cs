@@ -20,6 +20,16 @@ namespace MyFirstDevOpsProjectApp.Controllers
             return View(_context.Products.Include(x => x.Categories).ToList());
         }
 
+        public IActionResult XunitTest()
+        {
+            var model = new FrontEndModel
+            {
+                Take3 = _context.Products.Take(3)
+            };
+
+            return View(model);
+        }
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {

@@ -56,36 +56,37 @@
                 grid-column: 2/8;
                 grid-row: 1/2;
                 background-color: $light;
+                transition: 0.3s ease-in-out;
+                border-radius: 10px;
+                box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
 
                 .image1 {
                     padding-top: 21.81rem;
                     border-top-left-radius: 10px;
                     border-top-right-radius: 10px;
                     background-color: $grey;
-                    background-image: url(/img/productsleftimage.svg);
+                    background-image: url(/img/products/productsleftimage.svg);
                     background-repeat: no-repeat;
-                    transition: 0.3s ease-in-out;
                     cursor: pointer;
                 }
 
                 .image1text {
                     background: $dark-purple;
-                    border-bottom-left-radius: 10px;
-                    border-bottom-right-radius: 10px;
                     font-family: $roboto;
                     font-size: 1rem;
                     color: $light-grey;
                     text-align: left;
                     padding: 1rem;
                     width: 100%;
+                    border-bottom-left-radius: 10px;
+                    border-bottom-right-radius: 10px;
                 }
             }
 
             .middleimage {
                 grid-column: 8/14;
                 grid-row: 1/2;
-                background-image: url(/img/productsmiddleimage.svg);
-                background-color: $dark-purple;
+                background-image: url(/img/products/productsmiddleimage.svg);
                 background-repeat: no-repeat;
                 border-radius: 10px;
                 transition: 0.3s ease-in-out;
@@ -179,15 +180,17 @@
                 grid-column: 14/20;
                 grid-row: 1/2;
                 background-color: $light;
+                border-radius: 10px;
+                transition: 0.3s ease-in-out;
+                box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
 
                 .image3 {
                     padding-top: 21.81rem;
                     border-top-left-radius: 10px;
                     border-top-right-radius: 10px;
                     background-color: $grey;
-                    background-image: url(/img/productsrightimage.svg);
+                    background-image: url(/img/products/productsrightimage.svg);
                     background-repeat: no-repeat;
-                    transition: 0.3s ease-in-out;
                     cursor: pointer;
                 }
 
@@ -215,9 +218,10 @@
                 }
             }
 
-            .image1:hover, .middleimage:hover, .image3:hover {
-                box-shadow: $cardhover 0px 2px 8px, $cardhover 0px 8px 24px, $cardhover 0px 16px 56px;
+            .leftimage:hover, .middleimage:hover, .rightimage:hover {
+                box-shadow: $turquoise 0px 2px 4px 0px, $turquoise 0px 2px 16px 0px;
             }
         }
     }
 }
+

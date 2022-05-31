@@ -43,45 +43,161 @@
 
 
 
-            .image1 {
+            .leftimage {
                 grid-area: 1 / 1 / 9 / 4;
-                background-color: $grey;
-                background-image: url(/img/topsellersimage1.svg);
-                background-repeat: no-repeat;
-                padding-top: 43.7rem;
-                width: 95.4%;
-                border-radius: 10px;
+                background-color: $light;
                 transition: 0.3s ease-in-out;
-                box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+                border-radius: 10px;
+                width: 95.4%;
+
+                .image1 {
+                    padding-top: 40.5rem;
+                    border-top-left-radius: 10px;
+                    border-top-right-radius: 10px;
+                    background-color: $grey;
+                    background-image: url(/img/topseller/topsellersimage1.svg);
+                    background-repeat: no-repeat;
+                    cursor: pointer;
+                }
+
+                .image1text {
+                    background: $dark-purple;
+                    font-family: $roboto;
+                    font-size: 1rem;
+                    color: $light-grey;
+                    text-align: left;
+                    padding: 1rem;
+                    border-bottom-left-radius: 10px;
+                    border-bottom-right-radius: 10px;
+                }
             }
 
-            .image2 {
+            .topimage {
                 grid-area: 1 / 4 / 5 / 7;
                 background-color: $grey;
-                background-image: url(/img/topsellersimage2.svg);
-                background-repeat: no-repeat;
-                padding-top: 21.2rem;
-                width: 95.4%;
-                border-radius: 10px;
                 transition: 0.3s ease-in-out;
-                box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+                border-radius: 10px;
+                width: 95.4%;
+
+                .image2 {
+                    padding-top: 18rem;
+                    border-top-left-radius: 10px;
+                    border-top-right-radius: 10px;
+                    background-color: $grey;
+                    background-image: url(/img/topseller/topsellersimage2.svg);
+                    background-repeat: no-repeat;
+                    cursor: pointer;
+                }
+
+                .image2text {
+                    background: $dark-purple;
+                    font-family: $roboto;
+                    font-size: 1rem;
+                    color: $light-grey;
+                    text-align: left;
+                    padding: 1rem;
+                    width: 100%;
+                    border-bottom-left-radius: 10px;
+                    border-bottom-right-radius: 10px;
+                }
             }
 
-            .image3 {
+            .downimage {
                 grid-area: 4 / 4 / 10 / 7;
-                background-color: $grey;
-                background-image: url(/img/topsellersimage3.svg);
+                background-image: url(/img/topseller/topsellersimage3.svg);
                 background-repeat: no-repeat;
-                padding-top: 21.2rem;
-                width: 95.4%;
                 border-radius: 10px;
+                width: 95.4%;
                 transition: 0.3s ease-in-out;
                 box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+                padding-top: 0.5rem;
+
+
+                .menu {
+                    background-color: $light;
+                    border-radius: 100px;
+                    width: 45px;
+                    height: 180px;
+                    margin-left: 30.5rem;
+                    margin-top: 1rem;
+                    padding-top: 0.3rem;
+
+
+                    .image:hover {
+                        color: $turquoise;
+                        cursor: pointer;
+                    }
+
+                    .circle {
+                        color: #FE6C6C;
+                        margin: 0;
+                        padding: 0;
+                    }
+
+                    .heart {
+                        color: $dark-grey;
+                        padding: 0;
+                    }
+
+                    .shuffle {
+                        color: $dark-grey;
+                        padding: 0;
+                    }
+
+                    .search {
+                        color: $dark-grey;
+                        padding: 0;
+                    }
+
+                    .cart {
+                        color: $dark-grey;
+                        padding: 0;
+                    }
+                }
+
+                .headline {
+                    font-family: $roboto;
+                    font-size: 1.1rem;
+                    color: $light;
+                    font-weight: 400;
+                    margin-right: 19rem;
+                    margin-bottom: 0.5rem;
+                }
+
+                .fashion {
+                    font-family: $roboto;
+                    font-size: 0.9rem;
+                    color: $light;
+                    font-weight: 400;
+                    margin-right: 29rem;
+                    margin-left: 1.5rem;
+                    margin-bottom: 0.8rem;
+                    border: 1px solid white;
+                }
+
+                .price1 {
+                    font-family: $roboto;
+                    font-size: 0.85rem;
+                    color: $light;
+                    font-weight: 400;
+                    text-decoration: line-through;
+                    margin-right: 28rem;
+                    margin-bottom: 0.8rem;
+                }
+
+                .price2 {
+                    font-family: $roboto;
+                    font-size: 1.3rem;
+                    color: turquoise;
+                    font-weight: 600;
+                    margin-right: 26.5rem;
+                    margin-bottom: 1.2rem;
+                }
             }
         }
 
-        .image1:hover, .image2:hover, .image3:hover {
-            box-shadow: $cardhover 0px 2px 8px, $cardhover 0px 8px 24px, $cardhover 0px 16px 56px;
+        .leftimage:hover, .topimage:hover, .downimage:hover {
+            box-shadow: $turquoise 0px 2px 4px 0px, $turquoise 0px 2px 16px 0px;
         }
     }
 }

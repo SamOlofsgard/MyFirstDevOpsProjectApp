@@ -12,20 +12,20 @@ using Xunit;
 
 namespace ProjectApp.Test.xUnit.Test
 {
-    public class ProductControllerTest
+    public class HomeControllerTest
     {
         [Fact(DisplayName = "Index Should Return Valid Model")]
         public void Index_Should_Return_Valid_Model()
         {
-            //using var context = GetContextWithData();
+            using var context = GetContextWithData();
 
-            //var sut = new ProductController(context);
-            //var result = sut.Index() as ViewResult;
-            ////var model = result.Model as FrontEndModel;
+            var sut = new HomeController(context);
+            var result = sut.XunitTest() as ViewResult;
+            var model = result.Model as FrontEndModel;
 
-            //Assert.NotNull(model);
-            //Assert.NotNull(model.Take3);
-            //Assert.Equal(3, model.Take3.Count());
+            Assert.NotNull(model);
+            Assert.NotNull(model.Take3);
+            Assert.Equal(3, model.Take3.Count());
         }
 
         public static DataContext GetContextWithData()

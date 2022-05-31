@@ -41,7 +41,7 @@
                     list-style: none;
 
                     li {
-                        background: url(/img/drop.svg) no-repeat right center;
+                        background: url(/img/header/drop.svg) no-repeat right center;
                         padding: 0 1.5rem 0 0;
                     }
                 }
@@ -91,6 +91,7 @@
 #middle-header {
     padding-top: 2rem;
     padding-bottom: 2rem;
+    border-bottom: 1px solid $border;
 
     .container-middle-header {
         @include grid;
@@ -144,7 +145,11 @@
 }
 
 #lower-header {
-    border-top: 1px solid $border;
+    position: sticky;
+    z-index: 2;
+    top: 0;
+    background-color: #ffffff80;
+
 
     .container-lower-header {
         @include grid;
@@ -196,7 +201,7 @@
 
 
                 li {
-                    background: url(/img/dropturqouise.svg) no-repeat right center;
+                    background: url(/img//header/dropturqouise.svg) no-repeat right center;
                     padding: 0 1.5rem 0 0;
                 }
             }
