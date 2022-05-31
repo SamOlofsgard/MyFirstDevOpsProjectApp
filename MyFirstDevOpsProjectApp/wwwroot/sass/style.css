@@ -426,6 +426,7 @@ a:hover {
   padding-top: 8.5rem;
   padding-bottom: 8.5rem;
   background: #EEEEEE;
+  box-shadow: 0px 0px 3px 0px #888888;
 }
 #shopping .container-shopping {
   display: flex;
@@ -459,7 +460,7 @@ a:hover {
 #shopping .container-shopping .shopping-people {
   position: absolute;
   left: 950px;
-  top: 187px;
+  top: 188px;
 }
 
 #informationboxes {
@@ -986,6 +987,7 @@ a:hover {
   margin-top: 3rem;
   margin-bottom: 3rem;
   background: #CCCCCC;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
 }
 #sales01 .container-sales-01 {
   display: flex;
@@ -1154,7 +1156,7 @@ a:hover {
   color: #FFFFFF;
   font-weight: 400;
   margin-right: 9rem;
-  margin-top: 3.5rem;
+  margin-top: 4rem;
 }
 #featuredproducts .container-featured-products .carousel .middleimage .fashion {
   font-family: "Roboto", sans-serif;
@@ -1242,6 +1244,7 @@ a:hover {
   margin-top: 3rem;
   margin-bottom: 3rem;
   background-color: #0E153D;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
 }
 #sales02 .container-sales-02 {
   display: flex;
@@ -1418,6 +1421,7 @@ a:hover {
   transition: 0.3s ease-in-out;
   border-radius: 10px;
   width: 95.4%;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
 }
 #topsellers .container-topsellers .showcase .leftimage .image1 {
   padding-top: 40.5rem;
@@ -1444,6 +1448,7 @@ a:hover {
   transition: 0.3s ease-in-out;
   border-radius: 10px;
   width: 95.4%;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
 }
 #topsellers .container-topsellers .showcase .topimage .image2 {
   padding-top: 18rem;
@@ -1563,6 +1568,7 @@ a:hover {
   padding-top: 0rem;
   padding-bottom: 7rem;
   background-color: #0E153D;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
 }
 #reviews .container-reviews {
   margin-left: auto;
@@ -1830,6 +1836,7 @@ a:hover {
 #subscribe {
   margin-bottom: 7rem;
   background-color: #EEEEEE;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
 }
 #subscribe .container-subscribe {
   display: flex;
