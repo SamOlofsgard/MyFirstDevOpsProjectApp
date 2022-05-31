@@ -92,3 +92,24 @@ a:hover {
     background: $dark-grey;
     color: $text-dark;
 }
+
+.button4 {
+    background: $light;
+    border: none;
+    border-radius: 20px;
+    color: $turquoise;
+    padding: 0.8rem 1.5rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    transition: 0.3s;
+    cursor: pointer;
+    font-family: $roboto;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.button4:hover {
+    background: $turquoise;
+    color: $text-dark;
+}

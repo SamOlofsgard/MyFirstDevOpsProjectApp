@@ -31,63 +31,188 @@
 
         .text {
             font-size: 0.9rem;
-            margin-bottom: 3rem;
         }
 
         .carousel {
             @include grid;
-            grid-template-columns: repeat(6, 1fr);
-            grid-template-rows: repeat(9, 1fr);
+            grid-template-columns: repeat(14, 1fr);
+            grid-template-rows: repeat(4,130px);
             column-gap: 2rem;
-            row-gap: 10px;
+            row-gap: 0px;
 
             .leftarrow {
-                grid-area: 1 / 1 / 10 / 2;
+                grid-area: 1 / 1 / 5 / 2;
                 color: $dark-grey;
 
                 .image:hover {
                     color: $turquoise;
+                    cursor: pointer;
+                    transition: 0.3s ease-in-out;
                 }
             }
-        }
 
-        .content1 {
-            grid-area: 1 / 2 / 10 / 4;
-            background-color: $grey;
-            background-image: url(/img/blog/latestblogcontent1.svg);
-            background-repeat: no-repeat;
-            padding-top: 25rem;
-            width: 500px;
-            border-radius: 10px;
-            transition: 0.3s ease-in-out;
-            box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
-        }
-
-        .content2 {
-            grid-area: 1 / 4 / 10 / 6;
-            background-color: $grey;
-            background-image: url(/img/blog/latestblogcontent2.svg);
-            background-repeat: no-repeat;
-            padding-top: 25rem;
-            width: 500px;
-            border-radius: 10px;
-            transition: 0.3s ease-in-out;
-            box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
-        }
-
-        .rightarrow {
-            grid-area: 1 / 6 / 10 / 7;
-            color: $dark-grey;
-
-            .image:hover {
-                color: $turquoise;
+            .grey1 {
+                grid-area: 1 / 2 / 5 / 6;
+                background-color: $dark-grey;
+                padding: 12rem;
+                border-radius: 10px;
+                box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
             }
-        }
+
+            .purple1 {
+                grid-area: 2 / 5 / 4 / 8;
+                background-color: $dark-purple;
+                font-family: $roboto;
+                border-radius: 10px;
+                text-align: left;
+                transition: 0.3s ease-in-out;
+
+                .date {
+                    margin-left: 1.5rem;
+                    margin-bottom: 1rem;
+                    margin-top: -0.07rem;
+                }
+
+                .text1 {
+                    font-size: 0.9rem;
+                    font-weight: 400;
+                    color: $light;
+                    margin-left: 1.5rem;
+                    margin-bottom: 1rem;
+
+                    a {
+                        color: $light;
+                        text-decoration: underline;
+                    }
+                }
+
+                .text2 {
+                    font-size: 0.95rem;
+                    font-weight: 400;
+                    color: $turquoise;
+                    margin-left: 1.5rem;
+                    margin-bottom: 1.2rem;
+                    margin-right: 1.5rem;
+                }
+
+                .boxes {
+                    @include flex;
+                    font-size: 0.9rem;
+                    font-weight: 400;
+                    color: $light;
+                    margin-bottom: 1.2rem;
+
+                    .box1 {
+                        border: 1px solid white;
+                        margin-left: 1.5rem;
+                        padding: 0.1rem;
+                        padding-left: 0.5rem;
+                        padding-right: 0.5rem;
+                    }
+
+                    .box2 {
+                        border: 1px solid white;
+                        margin-right: 5rem;
+                        padding: 0.1rem;
+                        padding-left: 0.5rem;
+                        padding-right: 0.5rem;
+                    }
+                }
+
+                .text3 {
+                    margin-left: 1.5rem;
+                    margin-bottom: 1.2rem;
+                }
+            }
+
+            .grey2 {
+                grid-area: 1 / 8 / 5 / 12;
+                background-color: $dark-grey;
+                padding: 12rem;
+                border-radius: 10px;
+                box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+            }
+
+            .purple2 {
+                grid-area: 2 / 11 / 4 / 14;
+                background-color: $dark-purple;
+                border-radius: 10px;
+                text-align: left;
+                transition: 0.3s ease-in-out;
+
+                .date {
+                    margin-left: 1.5rem;
+                    margin-bottom: 1rem;
+                    margin-top: -0.07rem;
+                }
+
+                .text1 {
+                    font-size: 0.9rem;
+                    font-weight: 400;
+                    color: $light;
+                    margin-left: 1.5rem;
+                    margin-bottom: 1rem;
+
+                    a {
+                        color: $light;
+                        text-decoration: underline;
+                    }
+                }
+
+                .text2 {
+                    font-size: 0.95rem;
+                    font-weight: 400;
+                    color: $turquoise;
+                    margin-left: 1.5rem;
+                    margin-bottom: 1.2rem;
+                    margin-right: 1.5rem;
+                }
+
+                .boxes {
+                    @include flex;
+                    font-size: 0.9rem;
+                    font-weight: 400;
+                    color: $light;
+                    margin-bottom: 1.2rem;
+
+                    .box1 {
+                        border: 1px solid white;
+                        margin-left: 1.5rem;
+                        padding: 0.1rem;
+                        padding-left: 0.5rem;
+                        padding-right: 0.5rem;
+                    }
+
+                    .box2 {
+                        border: 1px solid white;
+                        margin-right: 5rem;
+                        padding: 0.1rem;
+                        padding-left: 0.5rem;
+                        padding-right: 0.5rem;
+                    }
+                }
+
+                .text3 {
+                    margin-left: 1.5rem;
+                    margin-bottom: 1.2rem;
+                }
+            }
+
+            .rightarrow {
+                grid-area: 1 / 14 / 5 / 15;
+                color: $dark-grey;
+
+                .image:hover {
+                    color: $turquoise;
+                    cursor: pointer;
+                    transition: 0.3s ease-in-out;
+                }
+            }
 
 
-        .content1:hover, .content2:hover {
-            box-shadow: $cardhover 0px 2px 8px, $cardhover 0px 8px 24px, $cardhover 0px 16px 56px;
-            background-color: $dark-turqouise;
+            .purple1:hover, .purple2:hover {
+                box-shadow: $turquoise 0px 2px 4px 0px, $turquoise 0px 2px 16px 0px;
+            }
         }
     }
 }

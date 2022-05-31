@@ -91,6 +91,27 @@ a:hover {
   color: #0E153D;
 }
 
+.button4 {
+  background: #FFFFFF;
+  border: none;
+  border-radius: 20px;
+  color: #20D3C2;
+  padding: 0.8rem 1.5rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  transition: 0.3s;
+  cursor: pointer;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.button4:hover {
+  background: #20D3C2;
+  color: #0E153D;
+}
+
 @media (min-width: 375px) {
   .container-top-header,
 .container-middle-header,
@@ -809,6 +830,7 @@ a:hover {
 #newarrivals .container-newarrivals .carousel .leftarrow .image:hover {
   color: #20D3C2;
   cursor: pointer;
+  transition: 0.3s ease-in-out;
 }
 #newarrivals .container-newarrivals .carousel .leftimage {
   grid-column: 2/8;
@@ -954,6 +976,7 @@ a:hover {
 #newarrivals .container-newarrivals .carousel .rightarrow .image:hover {
   color: #20D3C2;
   cursor: pointer;
+  transition: 0.3s ease-in-out;
 }
 #newarrivals .container-newarrivals .carousel .leftimage:hover, #newarrivals .container-newarrivals .carousel .middleimage:hover, #newarrivals .container-newarrivals .carousel .rightimage:hover {
   box-shadow: #20D3C2 0px 2px 4px 0px, #20D3C2 0px 2px 16px 0px;
@@ -1052,6 +1075,7 @@ a:hover {
 #featuredproducts .container-featured-products .carousel .leftarrow .image:hover {
   color: #20D3C2;
   cursor: pointer;
+  transition: 0.3s ease-in-out;
 }
 #featuredproducts .container-featured-products .carousel .leftimage {
   grid-column: 2/8;
@@ -1152,12 +1176,24 @@ a:hover {
   margin-top: 0.8rem;
 }
 #featuredproducts .container-featured-products .carousel .middleimage .price2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+#featuredproducts .container-featured-products .carousel .middleimage .price2 .text {
   font-family: "Roboto", sans-serif;
   font-size: 1.3rem;
   color: turquoise;
   font-weight: 600;
-  margin-right: 14rem;
-  margin-top: 1.2rem;
+  margin-top: 0.8rem;
+  margin-left: 1.5rem;
+  margin-bottom: 1.2rem;
+}
+#featuredproducts .container-featured-products .carousel .middleimage .price2 .stars {
+  margin-top: 0.8rem;
+  margin-right: 1.5rem;
   margin-bottom: 1.2rem;
 }
 #featuredproducts .container-featured-products .carousel .rightimage {
@@ -1196,6 +1232,7 @@ a:hover {
 #featuredproducts .container-featured-products .carousel .rightarrow .image:hover {
   color: #20D3C2;
   cursor: pointer;
+  transition: 0.3s ease-in-out;
 }
 #featuredproducts .container-featured-products .carousel .leftimage:hover, #featuredproducts .container-featured-products .carousel .middleimage:hover, #featuredproducts .container-featured-products .carousel .rightimage:hover {
   box-shadow: #20D3C2 0px 2px 4px 0px, #20D3C2 0px 2px 16px 0px;
@@ -1500,11 +1537,22 @@ a:hover {
   margin-bottom: 0.8rem;
 }
 #topsellers .container-topsellers .showcase .downimage .price2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+#topsellers .container-topsellers .showcase .downimage .price2 .text {
   font-family: "Roboto", sans-serif;
   font-size: 1.3rem;
   color: turquoise;
   font-weight: 600;
-  margin-right: 26.5rem;
+  margin-left: 1.5rem;
+  margin-bottom: 1.2rem;
+}
+#topsellers .container-topsellers .showcase .downimage .price2 .stars {
+  margin-right: 1.5rem;
   margin-bottom: 1.2rem;
 }
 #topsellers .container-topsellers .leftimage:hover, #topsellers .container-topsellers .topimage:hover, #topsellers .container-topsellers .downimage:hover {
@@ -1534,9 +1582,11 @@ a:hover {
 #reviews .container-reviews .carousel .leftarrow {
   grid-area: 1/1/10/2;
   color: #F6F6F6;
+  cursor: pointer;
 }
 #reviews .container-reviews .carousel .leftarrow .image:hover {
   color: #20D3C2;
+  transition: 0.3s ease-in-out;
 }
 #reviews .container-reviews .carousel .content {
   grid-area: 1/2/10/6;
@@ -1570,9 +1620,11 @@ a:hover {
 #reviews .container-reviews .carousel .rightarrow {
   grid-area: 1/6/10/7;
   color: #F6F6F6;
+  cursor: pointer;
 }
 #reviews .container-reviews .carousel .rightarrow .image:hover {
   color: #20D3C2;
+  transition: 0.3s ease-in-out;
 }
 
 #latestblog {
@@ -1607,61 +1659,175 @@ a:hover {
 }
 #latestblog .container-latestblog .text {
   font-size: 0.9rem;
-  margin-bottom: 3rem;
 }
 #latestblog .container-latestblog .carousel {
   display: grid;
   align-items: center;
   margin-left: auto;
   margin-right: auto;
-  grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: repeat(9, 1fr);
+  grid-template-columns: repeat(14, 1fr);
+  grid-template-rows: repeat(4, 130px);
   column-gap: 2rem;
-  row-gap: 10px;
+  row-gap: 0px;
 }
 #latestblog .container-latestblog .carousel .leftarrow {
-  grid-area: 1/1/10/2;
+  grid-area: 1/1/5/2;
   color: #CCCCCC;
 }
 #latestblog .container-latestblog .carousel .leftarrow .image:hover {
   color: #20D3C2;
-}
-#latestblog .container-latestblog .content1 {
-  grid-area: 1/2/10/4;
-  background-color: #EEEEEE;
-  background-image: url(/img/blog/latestblogcontent1.svg);
-  background-repeat: no-repeat;
-  padding-top: 25rem;
-  width: 500px;
-  border-radius: 10px;
+  cursor: pointer;
   transition: 0.3s ease-in-out;
+}
+#latestblog .container-latestblog .carousel .grey1 {
+  grid-area: 1/2/5/6;
+  background-color: #CCCCCC;
+  padding: 12rem;
+  border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
 }
-#latestblog .container-latestblog .content2 {
-  grid-area: 1/4/10/6;
-  background-color: #EEEEEE;
-  background-image: url(/img/blog/latestblogcontent2.svg);
-  background-repeat: no-repeat;
-  padding-top: 25rem;
-  width: 500px;
+#latestblog .container-latestblog .carousel .purple1 {
+  grid-area: 2/5/4/8;
+  background-color: #0E153D;
+  font-family: "Roboto", sans-serif;
   border-radius: 10px;
+  text-align: left;
   transition: 0.3s ease-in-out;
+}
+#latestblog .container-latestblog .carousel .purple1 .date {
+  margin-left: 1.5rem;
+  margin-bottom: 1rem;
+  margin-top: -0.07rem;
+}
+#latestblog .container-latestblog .carousel .purple1 .text1 {
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: #FFFFFF;
+  margin-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+#latestblog .container-latestblog .carousel .purple1 .text1 a {
+  color: #FFFFFF;
+  text-decoration: underline;
+}
+#latestblog .container-latestblog .carousel .purple1 .text2 {
+  font-size: 0.95rem;
+  font-weight: 400;
+  color: #20D3C2;
+  margin-left: 1.5rem;
+  margin-bottom: 1.2rem;
+  margin-right: 1.5rem;
+}
+#latestblog .container-latestblog .carousel .purple1 .boxes {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: #FFFFFF;
+  margin-bottom: 1.2rem;
+}
+#latestblog .container-latestblog .carousel .purple1 .boxes .box1 {
+  border: 1px solid white;
+  margin-left: 1.5rem;
+  padding: 0.1rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+#latestblog .container-latestblog .carousel .purple1 .boxes .box2 {
+  border: 1px solid white;
+  margin-right: 5rem;
+  padding: 0.1rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+#latestblog .container-latestblog .carousel .purple1 .text3 {
+  margin-left: 1.5rem;
+  margin-bottom: 1.2rem;
+}
+#latestblog .container-latestblog .carousel .grey2 {
+  grid-area: 1/8/5/12;
+  background-color: #CCCCCC;
+  padding: 12rem;
+  border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
 }
-#latestblog .container-latestblog .rightarrow {
-  grid-area: 1/6/10/7;
+#latestblog .container-latestblog .carousel .purple2 {
+  grid-area: 2/11/4/14;
+  background-color: #0E153D;
+  border-radius: 10px;
+  text-align: left;
+  transition: 0.3s ease-in-out;
+}
+#latestblog .container-latestblog .carousel .purple2 .date {
+  margin-left: 1.5rem;
+  margin-bottom: 1rem;
+  margin-top: -0.07rem;
+}
+#latestblog .container-latestblog .carousel .purple2 .text1 {
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: #FFFFFF;
+  margin-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+#latestblog .container-latestblog .carousel .purple2 .text1 a {
+  color: #FFFFFF;
+  text-decoration: underline;
+}
+#latestblog .container-latestblog .carousel .purple2 .text2 {
+  font-size: 0.95rem;
+  font-weight: 400;
+  color: #20D3C2;
+  margin-left: 1.5rem;
+  margin-bottom: 1.2rem;
+  margin-right: 1.5rem;
+}
+#latestblog .container-latestblog .carousel .purple2 .boxes {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: #FFFFFF;
+  margin-bottom: 1.2rem;
+}
+#latestblog .container-latestblog .carousel .purple2 .boxes .box1 {
+  border: 1px solid white;
+  margin-left: 1.5rem;
+  padding: 0.1rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+#latestblog .container-latestblog .carousel .purple2 .boxes .box2 {
+  border: 1px solid white;
+  margin-right: 5rem;
+  padding: 0.1rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+#latestblog .container-latestblog .carousel .purple2 .text3 {
+  margin-left: 1.5rem;
+  margin-bottom: 1.2rem;
+}
+#latestblog .container-latestblog .carousel .rightarrow {
+  grid-area: 1/14/5/15;
   color: #CCCCCC;
 }
-#latestblog .container-latestblog .rightarrow .image:hover {
+#latestblog .container-latestblog .carousel .rightarrow .image:hover {
   color: #20D3C2;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
 }
-#latestblog .container-latestblog .content1:hover, #latestblog .container-latestblog .content2:hover {
-  box-shadow: #11111a1a 0px 2px 8px, #11111a1a 0px 8px 24px, #11111a1a 0px 16px 56px;
-  background-color: #24998E;
+#latestblog .container-latestblog .carousel .purple1:hover, #latestblog .container-latestblog .carousel .purple2:hover {
+  box-shadow: #20D3C2 0px 2px 4px 0px, #20D3C2 0px 2px 16px 0px;
 }
 
 #subscribe {
-  margin-top: 7rem;
   margin-bottom: 7rem;
   background-color: #EEEEEE;
 }

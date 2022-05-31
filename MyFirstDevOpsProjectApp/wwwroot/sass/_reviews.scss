@@ -19,9 +19,11 @@
             .leftarrow {
                 grid-area: 1 / 1 / 10 / 2;
                 color: $light-grey;
+                cursor: pointer;
 
                 .image:hover {
                     color: $turquoise;
+                    transition: 0.3s ease-in-out;
                 }
             }
 
@@ -30,7 +32,7 @@
                 font-family: $roboto;
 
                 .image1 {
-                    margin-bottom: 2rem
+                    margin-bottom: 2rem;
                 }
 
                 .image2 {
@@ -64,9 +66,11 @@
             .rightarrow {
                 grid-area: 1 / 6 / 10 / 7;
                 color: $light-grey;
+                cursor: pointer;
 
                 .image:hover {
                     color: $turquoise;
+                    transition: 0.3s ease-in-out;
                 }
             }
         }

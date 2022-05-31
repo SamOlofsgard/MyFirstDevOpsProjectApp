@@ -49,6 +49,7 @@
                 .image:hover {
                     color: $turquoise;
                     cursor: pointer;
+                    transition: 0.3s ease-in-out;
                 }
             }
 
@@ -165,13 +166,23 @@
                 }
 
                 .price2 {
-                    font-family: $roboto;
-                    font-size: 1.3rem;
-                    color: turquoise;
-                    font-weight: 600;
-                    margin-right: 14rem;
-                    margin-top: 1.2rem;
-                    margin-bottom: 1.2rem;
+                    @include flex;
+
+                    .text {
+                        font-family: $roboto;
+                        font-size: 1.3rem;
+                        color: turquoise;
+                        font-weight: 600;
+                        margin-top: 0.8rem;
+                        margin-left: 1.5rem;
+                        margin-bottom: 1.2rem;
+                    }
+
+                    .stars {
+                        margin-top: 0.8rem;
+                        margin-right: 1.5rem;
+                        margin-bottom: 1.2rem;
+                    }
                 }
             }
 
@@ -215,6 +226,7 @@
                 .image:hover {
                     color: $turquoise;
                     cursor: pointer;
+                    transition: 0.3s ease-in-out;
                 }
             }
 

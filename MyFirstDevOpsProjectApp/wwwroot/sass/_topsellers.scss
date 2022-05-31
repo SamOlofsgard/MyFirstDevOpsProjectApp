@@ -186,12 +186,21 @@
                 }
 
                 .price2 {
-                    font-family: $roboto;
-                    font-size: 1.3rem;
-                    color: turquoise;
-                    font-weight: 600;
-                    margin-right: 26.5rem;
-                    margin-bottom: 1.2rem;
+                    @include flex;
+
+                    .text {
+                        font-family: $roboto;
+                        font-size: 1.3rem;
+                        color: turquoise;
+                        font-weight: 600;
+                        margin-left: 1.5rem;
+                        margin-bottom: 1.2rem;
+                    }
+
+                    .stars {
+                        margin-right: 1.5rem;
+                        margin-bottom: 1.2rem;
+                    }
                 }
             }
         }
