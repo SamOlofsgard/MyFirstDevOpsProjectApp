@@ -1,0 +1,9 @@
+﻿@import "../_mixin.scss";
+#Product-Info {
+    border: solid 1px black;
+    width: 1150px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+}

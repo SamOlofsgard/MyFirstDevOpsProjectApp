@@ -226,33 +226,45 @@ a:hover {
 }
 
 #Product-Nav {
+  background-color: #0E153D;
+}
+#Product-Nav .banner {
   font-family: "Roboto", sans-serif;
   height: 140px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-left: 23rem;
-  padding-right: 23rem;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1150px;
   color: #FFFFFF;
-  background-color: #0E153D;
 }
-#Product-Nav .nav-links-right {
+#Product-Nav .banner .nav-links-right {
   display: flex;
   align-items: center;
 }
-#Product-Nav .nav-links-right .fa-angle-left {
+#Product-Nav .banner .nav-links-right .fa-angle-left {
   padding-left: 2rem;
 }
-#Product-Nav .nav-links-right .fa-square-full {
+#Product-Nav .banner .nav-links-right .fa-square-full {
   padding-left: 1rem;
   padding-right: 1rem;
 }
-#Product-Nav a {
+#Product-Nav .banner a {
   color: #20D3C2;
 }
-#Product-Nav a:hover {
+#Product-Nav .banner a:hover {
   text-decoration: none;
   color: #FFFFFF;
+}
+
+#Product-Info {
+  border: solid 1px black;
+  width: 1150px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: row;
 }
 
 #top-header {

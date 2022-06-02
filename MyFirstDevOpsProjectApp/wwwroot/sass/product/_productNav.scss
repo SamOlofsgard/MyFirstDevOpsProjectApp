@@ -1,37 +1,37 @@
 ﻿@import "../_mixin.scss";
 
 #Product-Nav {
-    font-family: $roboto;
-    height: 140px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-left: 23rem;
-    padding-right: 23rem;
-    color: $light;
     background-color: $dark-purple;
-
-    .nav-links-right {
-        display: flex;
-        align-items: center;
-
-        .fa-angle-left {
-            padding-left: 2rem;
-        }
-
-        .fa-square-full{
-            padding-left:1rem;
-            padding-right:1rem;
-        }
-    }
-
-    a {
-        color: $text-turquoise;
-    }
-
-    a:hover {
-        text-decoration: none;
+    .banner {
+        font-family: $roboto;
+        height: 140px;
+        @include flex;
+        width: 1150px;
         color: $light;
+
+
+        .nav-links-right {
+            display: flex;
+            align-items: center;
+
+            .fa-angle-left {
+                padding-left: 2rem;
+            }
+
+            .fa-square-full {
+                padding-left: 1rem;
+                padding-right: 1rem;
+            }
+        }
+
+        a {
+            color: $text-turquoise;
+        }
+
+        a:hover {
+            text-decoration: none;
+            color: $light;
+        }
     }
 }
 
