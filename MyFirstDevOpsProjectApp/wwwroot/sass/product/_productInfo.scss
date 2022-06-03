@@ -1,9 +1,98 @@
 ﻿@import "../_mixin.scss";
 #Product-Info {
-    border: solid 1px black;
     width: 1150px;
     margin-left: auto;
     margin-right: auto;
     display: flex;
     flex-direction: row;
+    padding-top: 115px;
+    padding-bottom: 80px;
+
+    .product-text {
+        width: 510px;
+        line-height: 1.8rem;
+        padding-left: 1.5rem;
+        font-family: $roboto;
+        font-size: 16px;
+
+        .header {
+            color: $turquoise;
+            font-size: 24px;
+            font-weight: 600;
+        }
+
+        .text {
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid $grey;
+        }
+
+        .product-price {
+            display: flex;
+            justify-content: space-between;
+            width: 300px;
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+
+            .current-price {
+                color: $turquoise;
+                font-size: 24px;
+                font-weight: 600;
+            }
+
+            .old-price {
+                text-decoration-line: line-through;
+                color: $dark-grey;
+            }
+        }
+
+        .product-choices {
+            display: flex;
+            justify-content: space-between;
+            width: 400px;
+        }
+
+        .category {
+            display: flex;
+            padding-top: 1rem;
+
+            .category-text {
+                padding-left: 0.5rem;
+                color: $turquoise;
+            }
+        }
+
+        .tags {
+            display: flex;
+            justify-content: space-between;
+            padding-top: 1rem;
+            width: 400px;
+
+            .tags-text {
+                border: 1px solid black;
+                padding: 0 1rem 0 1rem;
+            }
+        }
+
+        .social-media {
+            display: flex;
+            justify-content: space-between;
+            padding-top: 1rem;
+            width: 300px;
+
+            i {
+                border: 1px solid $turquoise;
+                border-radius: 20px;
+                width: 30px;
+                height: 30px;
+                padding-left: 6px;
+                padding-top: 6px;
+                background: $turquoise;
+            }
+
+            i:hover {
+                background: white;
+            }
+        }
+    }
 }
